@@ -3,11 +3,6 @@ username:123;
 userpwd:123;
 },
 {
-username:1234;
-userpwd:1234;
-},
-
-{
 username:12345;
 userpwd:12345;
 },

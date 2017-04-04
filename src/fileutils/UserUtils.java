@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class UserUtils {
 	public static int userIsExist(String username, String userpwd) {
-		String detil = FileUtils.Readfile("Home\\Login.txt");
+		String detil = FileUtils.Readfile("Login\\Login.txt");
 		String name = "username:" + username + ";";
 		String pwd = "userpwd:" +userpwd + ";";
 		

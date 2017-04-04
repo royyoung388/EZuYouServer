@@ -60,10 +60,10 @@ public class Sign {
 				case 1:
 					out.writeUTF("right");
 					System.out.println("×¢²á³É¹¦");
-					FileUtils.Writefile("Home\\Login.txt", "\r\n{\r\n"
+					FileUtils.Writefile("Login\\Login.txt", "{\r\n"
 													+ "username:" + username + ";\r\n"
 													+ "userpwd:" + userpwd + ";\r\n"
-													+ "},\r\n");
+													+ "},\n");
 					break;
 				default:
 					out.writeUTF("error");
