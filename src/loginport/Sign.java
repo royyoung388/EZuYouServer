@@ -1,33 +1,32 @@
-package homeport;
+package loginport;
 
+import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 import fileutils.FileUtils;
+import fileutils.UserUtils;
 import keyword.KeyWord;
 
-//传输列表信息
-public class Home_Item {
-
+//注册
+public class Sign {
 	private ServerSocket serverSocket;
 
 	// 初始化，监听
-	public Home_Item() {
+	public Sign() {
 		// TODO Auto-generated constructor stub
-		System.out.println("Home_Item启动");
-
+		System.out.println("Sign启动");
 		try {
 
-			serverSocket = new ServerSocket(KeyWord.PORT_HOME_ITEM);
+			serverSocket = new ServerSocket(KeyWord.PORT_LOGIN_SIGN);
 
 			while (true) {
 				// 一旦有堵塞, 则表示服务器与客户端获得了连接
 				Socket client = serverSocket.accept();
 
-				System.out.println("新的设备，获取item信息：" + client.getInetAddress().toString());
+				System.out.println("新的设备，Sign：" + client.getInetAddress().toString());
 
 				new HandlerThread(client);
 			}
@@ -38,9 +37,7 @@ public class Home_Item {
 
 	// 处理这次连接
 	// 处理信息
-	// 广告处理
 	private class HandlerThread implements Runnable {
-
 		private Socket client;
 
 		public HandlerThread(Socket client) {
@@ -53,18 +50,30 @@ public class Home_Item {
 			// TODO Auto-generated method stub
 
 			try {
-
+				DataInputStream in = new DataInputStream(client.getInputStream());
 				DataOutputStream out = new DataOutputStream(client.getOutputStream());
 
-				String string = FileUtils.Readfile("Home\\Home_Item.txt");
+				String username = in.readUTF();
+				String userpwd = in.readUTF();
 
-				out.writeUTF(string);
-				out.close();
+				switch (UserUtils.userIsExist(username, userpwd)) {
+				case 1:
+					out.writeUTF("right");
+					System.out.println("注册成功");
+					FileUtils.Writefile("Home\\Login.txt", "\r\n{\r\n"
+													+ "username:" + username + ";\r\n"
+													+ "userpwd:" + userpwd + ";\r\n"
+													+ "},\r\n");
+					break;
+				default:
+					out.writeUTF("error");
+					System.out.println("注册失败");
+					break;
+				}
 
-				System.out.println("传输Home_Item成功");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
-				System.out.println("传输Home_Item失败");
+				System.out.println("注册出错");
 				e.printStackTrace();
 			}
 		}
