@@ -7,4 +7,5 @@ public class KeyWord {
 	public final static int PORT_HOME_IMAGE = 30002;
 	public final static int PORT_LOGIN = 30003;
 	public final static int PORT_LOGIN_SIGN = 30004;
+	public final static int PORT_RELEASE = 30005;
 }

@@ -58,7 +58,7 @@ public class Home_Advertise {
 			try {
 
 				DataOutputStream out = new DataOutputStream(client.getOutputStream());
-				FileInputStream fis = new FileInputStream("Home\\advertisement.png");
+				FileInputStream fis = new FileInputStream("Home\\advertisement.jpg");
 
 				int size = fis.available();
 				System.out.println("size = " + size);

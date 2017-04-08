@@ -14,6 +14,7 @@ import homeport.Home_Image;
 import homeport.Home_Item;
 import loginport.Login;
 import loginport.Sign;
+import releaseport.Release;
 
 public class Server {
 	public static void main(String[] args) {
@@ -66,6 +67,16 @@ public class Server {
 			public void run() {
 				// TODO Auto-generated method stub
 				Sign sign = new Sign();
+			}
+		}).start();
+
+		// 处理发布
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				Release release = new Release();
 			}
 		}).start();
 	}

@@ -28,4 +28,10 @@ sell:125;
 rent:65;
 introduce:这是一个双人床5;
 },
+{
+name:我人做人做人做;
+sell:给你;
+rent:in;
+introduce:命;
+},
 

@@ -59,7 +59,7 @@ public class Home_Image {
 				int i = 0;
 
 				while (true) {
-					File file = new File("Home\\Home_image\\image" + i + ".png");
+					File file = new File("Home\\Home_image\\image" + i + ".jpg");
 
 					if (file.exists()) {
 						FileInputStream fis = new FileInputStream(file);
