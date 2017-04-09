@@ -65,16 +65,18 @@ public class Release {
 						+ "introduce:" + detil + ";\r\n"
 						+ "},\n");
 				
+				System.out.println("上传信息成功");
+				
 				int count = in.readInt();
 				
 				int image_count = 0;
 				
-				while (new File("Home\\Home_image\\image" + image_count + ".jpg").exists()) {
+				while (new File("Home\\Home_image\\image" + image_count + "1" + ".jpg").exists()) {
 					image_count++;
 				}
 				
 				for (int i = 0; i < count; i++) {		
-					FileOutputStream fos = new FileOutputStream("Home\\Home_image\\image" + (image_count + i) + ".jpg");
+					FileOutputStream fos = new FileOutputStream("Home\\Home_image\\image" + (image_count + i) + (i + 1) + ".jpg");
 					
 					int size = in.readInt();
 					byte[] data = new byte[size];
@@ -84,6 +86,7 @@ public class Release {
                     }
 					fos.write(data);
 					fos.close();
+					System.out.println("发布图片" + (image_count + i) + (i + 1));
 				}
 				
 				in.close();
@@ -91,7 +94,7 @@ public class Release {
 				System.out.println("发布成功");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
-				System.out.println("图片发送失败");
+				System.out.println("图片发布失败");
 				e.printStackTrace();
 			}
 		}

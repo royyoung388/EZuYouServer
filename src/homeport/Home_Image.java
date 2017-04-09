@@ -59,7 +59,7 @@ public class Home_Image {
 				int i = 0;
 
 				while (true) {
-					File file = new File("Home\\Home_image\\image" + i + ".jpg");
+					File file = new File("Home\\Home_image\\image" + i + "1.jpg");
 
 					if (file.exists()) {
 						FileInputStream fis = new FileInputStream(file);
@@ -76,7 +76,7 @@ public class Home_Image {
 
 						i++;
 						fis.close();
-						System.out.println("图片" + i + "发送成功");
+						System.out.println("图片" + (i - 1) + "发送成功");
 					} else {
 						out.writeInt(0);
 						out.write(0);
