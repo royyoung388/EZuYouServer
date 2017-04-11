@@ -1,5 +1,6 @@
 package homeport;
 
+import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -55,11 +56,27 @@ public class Home_Item {
 			try {
 
 				DataOutputStream out = new DataOutputStream(client.getOutputStream());
-
-				String string = FileUtils.Readfile("Home\\Home_Item.txt");
-
-				out.writeUTF(string);
+				DataInputStream inputStream = new DataInputStream(client.getInputStream());
+				
+				int position = inputStream.readInt();
+				
+				int count = FileUtils.GetImageCount();
+				out.writeInt(count);
+				
+				System.out.println("图片个数" + count);
+				
+				if (position == -1) {
+					System.out.println("获取所有item信息");
+					String string = FileUtils.Readfile("Home\\Home_Item.txt");
+					out.writeUTF(string);
+				} else {
+					System.out.println("获取第" + position + "个item信息");
+					String string = FileUtils.ReadItemPosition(position);
+					out.writeUTF(string);
+				}
+				
 				out.close();
+				inputStream.close();
 
 				System.out.println("传输Home_Item成功");
 			} catch (IOException e) {

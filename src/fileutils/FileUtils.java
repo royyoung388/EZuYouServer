@@ -2,9 +2,12 @@ package fileutils;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class FileUtils {
 
@@ -50,4 +53,50 @@ public class FileUtils {
          }
 		return s;  
     }
+    
+    //获取指定的item信息
+    public static String ReadItemPosition(int position) {
+    	
+		String string = FileUtils.Readfile("Home\\Home_Item.txt");
+		
+		 Pattern pattern = Pattern.compile("(\\{\\s*name:\\S*?;\\s*" +
+                 "sell:\\S*?;\\s*" +
+                 "rent:\\S*?;\\s*" +
+                 "introduce:\\S*?;\\s*\\},)");
+		 Matcher matcher = pattern.matcher(string);
+		 System.out.println("获取第" + position + "条item信息");
+		 
+		 int i = 0;
+		 String item = null;
+		 while (matcher.find()) {
+			if (position == i) {
+				item = matcher.group();
+				break;
+			}
+		}
+		 System.out.println("该内容为:" + item);
+		 return item;
+	}
+    
+    //获取图片个数
+    public static int GetImageCount() {
+    	
+		int count = 0;
+		int i = 0, j = 1;
+		
+		
+		while (true) {
+			File file = new File("Home\\Home_image\\image" + i + j + ".jpg");
+			if (file.exists()) {
+				count++;
+				j++;
+			} else if (j == 1) {
+				break;
+			} else {
+				i++;
+				j = 1;
+			}
+		}
+		return count;
+	}
 }

@@ -55,14 +55,22 @@ public class Sign {
 
 				String username = in.readUTF();
 				String userpwd = in.readUTF();
+				String userschool = in.readUTF();
+				String userschool_class = in.readUTF();
+				String usernumber = in.readUTF();
+				String usersex = in.readUTF();
 
-				switch (UserUtils.userIsExist(username, userpwd)) {
+				switch (UserUtils.userIsExist(username, userpwd,userschool, usernumber)) {
 				case 1:
 					out.writeUTF("right");
 					System.out.println("×¢²á³É¹¦");
 					FileUtils.Writefile("Login\\Login.txt", "{\r\n"
 													+ "username:" + username + ";\r\n"
 													+ "userpwd:" + userpwd + ";\r\n"
+													+ "userschool:" + userschool + ";\r\n"
+													+ "userschool_class:" + userschool_class + ";\r\n"
+													+ "usernumber:" + usernumber + ";\r\n"
+													+ "usersex:" + usersex + ";\r\n"
 													+ "},\n");
 					break;
 				default:

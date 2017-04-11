@@ -56,14 +56,17 @@ public class Login {
 				String username = in.readUTF();
 				String userpwd = in.readUTF();
 
-				switch (UserUtils.userIsExist(username, userpwd)) {
+				switch (UserUtils.userIsExist(username, userpwd, "0", "0")) {
 				case 0:
 					out.writeUTF("right");
-					System.out.println("µÇÂ¼³É¹¦");
+					System.out.println("µÇÂ¼/×¢²á³É¹¦");
+					break;
+				case 3:
+					out.writeUTF("ÓÃ»§ÒÑ´æÔÚ");
 					break;
 				default:
 					out.writeUTF("error");
-					System.out.println("µÇÂ¼Ê§°Ü");
+					System.out.println("µÇÂ¼/×¢²áÊ§°Ü");
 					break;
 				}
 

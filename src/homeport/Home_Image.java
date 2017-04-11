@@ -55,33 +55,68 @@ public class Home_Image {
 			try {
 
 				DataOutputStream out = new DataOutputStream(client.getOutputStream());
+				DataInputStream inputStream = new DataInputStream(client.getInputStream());
+				
+				int position = inputStream.readInt();
 
-				int i = 0;
+				//所有图片
+				if (position == -1) {
+					int i = 0;
+					while (true) {
+						File file = new File("Home\\Home_image\\image" + i + "1.jpg");
 
-				while (true) {
-					File file = new File("Home\\Home_image\\image" + i + "1.jpg");
+						if (file.exists()) {
+							FileInputStream fis = new FileInputStream(file);
+							int size = fis.available();
 
-					if (file.exists()) {
-						FileInputStream fis = new FileInputStream(file);
-						int size = fis.available();
+							System.out.println("传输图片" + i + 1);
+							System.out.println("size = " + size);
 
-						System.out.println("传输图片" + i);
-						System.out.println("size = " + size);
+							byte[] data = new byte[size];
+							fis.read(data);
+							
+							out.writeInt(size);
+							out.write(data);
+							
+							out.flush();
+							i++;
+							fis.close();
+							System.out.println("图片" + (i - 1) + "1发送成功");
+						} else {
+							out.writeInt(0);
+							out.write(0);
+							break;
+						}
+					}
+					
+				} else {
+					//指定图片
+					int i = 1;
+					while (true) {
+						File file = new File("Home\\Home_image\\image" + position + i + ".jpg");
+						
+						if (file.exists()) {
+							FileInputStream fis = new FileInputStream(file);
+							int size = fis.available();
 
-						byte[] data = new byte[size];
-						fis.read(data);
-						out.writeInt(size);
-						out.write(data);
-						out.flush();
+							System.out.println("传输图片" + position + i);
+							System.out.println("size = " + size);
 
-						i++;
-						fis.close();
-						System.out.println("图片" + (i - 1) + "发送成功");
-					} else {
-						out.writeInt(0);
-						out.write(0);
-						out.flush();
-						break;
+							byte[] data = new byte[size];
+							fis.read(data);
+							out.writeInt(size);
+							out.write(data);
+							out.flush();
+
+							i++;
+							fis.close();
+							System.out.println("图片" + (i - 1) + "发送成功");
+						} else {
+							out.writeInt(0);
+							out.write(0);
+							out.flush();
+							break;
+						}
 					}
 				}
 

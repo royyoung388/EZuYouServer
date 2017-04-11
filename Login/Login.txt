@@ -1,14 +1,9 @@
 {
-username:123;
+username:张三;
 userpwd:123;
-},
-{
-username:12345;
-userpwd:12345;
-},
-
-{
-username:12;
-userpwd:12;
+userschool:武大;
+userschool_class:国软;
+usernumber:123;
+usersex:男;
 },
 

@@ -4,15 +4,22 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class UserUtils {
-	public static int userIsExist(String username, String userpwd) {
+	public static int userIsExist(String username, String userpwd,String userschool, String usernumber) {
 		String detil = FileUtils.Readfile("Login\\Login.txt");
 		String name = "username:" + username + ";";
 		String pwd = "userpwd:" +userpwd + ";";
+		String school = "school:" + userschool + ";";
+		String number = "number" + usernumber + ";";
 		
 		Pattern pname = Pattern.compile(name);
 		Pattern ppwd = Pattern.compile(pwd);
+		Pattern pschool = Pattern.compile(school);
+		Pattern pnumber = Pattern.compile(number);
+		
 		Matcher mname = pname.matcher(detil);
 		Matcher mpwd = ppwd.matcher(detil);
+		Matcher mshcool = pschool.matcher(school);
+		Matcher mnumber = pnumber.matcher(number);
 			
 		//用户名错误，返回1
 		if (!mname.find()) {
@@ -26,6 +33,11 @@ public class UserUtils {
 			return 2;
 		}
 		
+		if (!(mshcool.find() && mnumber.find())) {
+			System.out.println("用户已存在，返回3");
+			return 3;
+		}
+				
 		//用户名，密码正确，返回0
 		System.out.println("用户名，密码正确，返回0");
 		return 0;
