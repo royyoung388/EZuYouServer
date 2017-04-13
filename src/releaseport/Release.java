@@ -53,12 +53,16 @@ public class Release {
 			try {
 				DataInputStream in = new DataInputStream(client.getInputStream());
 				
+				String id = in.readUTF();
+				String person = in.readUTF();
 				String name = in.readUTF();
 				String sell = in.readUTF();
 				String rent = in.readUTF();
 				String detil = in.readUTF();
 				
 				FileUtils.Writefile("Home\\Home_Item.txt", "{\r\n"
+						+ "id:" + id + ";\r\n"
+						+ "person:" + person + ";\r\n"
 						+ "name:" + name + ";\r\n"
 						+ "sell:" + sell + ";\r\n"
 						+ "rent:" + rent + ";\r\n"
@@ -76,7 +80,7 @@ public class Release {
 				}
 				
 				for (int i = 0; i < count; i++) {		
-					FileOutputStream fos = new FileOutputStream("Home\\Home_image\\image" + (image_count + i) + (i + 1) + ".jpg");
+					FileOutputStream fos = new FileOutputStream("Home\\Home_image\\image" + image_count  + (i + 1) + ".jpg");
 					
 					int size = in.readInt();
 					byte[] data = new byte[size];

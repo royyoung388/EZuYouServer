@@ -7,3 +7,12 @@ usernumber:123;
 usersex:男;
 },
 
+{
+username:李四;
+userpwd:123;
+userschool:武大;
+userschool_class:国软;
+usernumber:123;
+usersex:女;
+},
+

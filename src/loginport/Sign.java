@@ -7,7 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 import fileutils.FileUtils;
-import fileutils.UserUtils;
+import fileutils.CheckUserUtils;
 import keyword.KeyWord;
 
 //×¢²á
@@ -60,7 +60,7 @@ public class Sign {
 				String usernumber = in.readUTF();
 				String usersex = in.readUTF();
 
-				switch (UserUtils.userIsExist(username, userpwd,userschool, usernumber)) {
+				switch (CheckUserUtils.userIsExist(username, userpwd,userschool, usernumber)) {
 				case 1:
 					out.writeUTF("right");
 					System.out.println("×¢²á³É¹¦");

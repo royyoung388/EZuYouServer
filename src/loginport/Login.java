@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import fileutils.CheckUserUtils;
 import fileutils.UserUtils;
 import keyword.KeyWord;
 
@@ -56,10 +57,12 @@ public class Login {
 				String username = in.readUTF();
 				String userpwd = in.readUTF();
 
-				switch (UserUtils.userIsExist(username, userpwd, "0", "0")) {
+				switch (CheckUserUtils.userIsExist(username, userpwd, "0", "0")) {
 				case 0:
 					out.writeUTF("right");
 					System.out.println("登录/注册成功");
+					UserUtils userUtils = new UserUtils(username, userpwd);
+					out.writeUTF(userUtils.getID());
 					break;
 				case 3:
 					out.writeUTF("用户已存在");

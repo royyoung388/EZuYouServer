@@ -59,10 +59,15 @@ public class FileUtils {
     	
 		String string = FileUtils.Readfile("Home\\Home_Item.txt");
 		
-		 Pattern pattern = Pattern.compile("(\\{\\s*name:\\S*?;\\s*" +
-                 "sell:\\S*?;\\s*" +
-                 "rent:\\S*?;\\s*" +
-                 "introduce:\\S*?;\\s*\\},)");
+		 Pattern pattern = Pattern.compile("(\\{\\s*" +
+				 							"id:\\S*?;\\s*" +
+				 							"person:\\S*?;\\s*" +
+		 		 							"name:\\S*?;\\s*" +
+                 							"sell:\\S*?;\\s*" +
+                 							"rent:\\S*?;\\s*" +
+                 							"introduce:\\S*?;\\s*"
+                 							+ "\\},)\\s*");
+		 
 		 Matcher matcher = pattern.matcher(string);
 		 System.out.println("获取第" + position + "条item信息");
 		 
@@ -73,6 +78,7 @@ public class FileUtils {
 				item = matcher.group();
 				break;
 			}
+			i++;
 		}
 		 System.out.println("该内容为:" + item);
 		 return item;

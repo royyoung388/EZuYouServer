@@ -9,6 +9,7 @@ import java.util.List;
 
 import javax.print.attribute.standard.Sides;
 
+import chatport.ChatPort;
 import homeport.Home_Advertise;
 import homeport.Home_Image;
 import homeport.Home_Item;
@@ -77,6 +78,16 @@ public class Server {
 			public void run() {
 				// TODO Auto-generated method stub
 				Release release = new Release();
+			}
+		}).start();
+		
+		// ¥¶¿Ì¡ƒÃÏ
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				ChatPort chatPort = new ChatPort();
 			}
 		}).start();
 	}
