@@ -16,6 +16,8 @@ import homeport.Home_Item;
 import loginport.Login;
 import loginport.Sign;
 import releaseport.Release;
+import strategy.Strategy;
+import strategy.Strategy_Image;
 
 public class Server {
 	public static void main(String[] args) {
@@ -51,6 +53,26 @@ public class Server {
 			}
 		}).start();
 
+		// 处理strategy_item信息
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				Strategy item = new Strategy();
+			}
+		}).start();
+
+		// 处理strategy_image
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				Strategy_Image item = new Strategy_Image();
+			}
+		}).start();
+
 		// 处理登录
 		new Thread(new Runnable() {
 
@@ -80,7 +102,7 @@ public class Server {
 				Release release = new Release();
 			}
 		}).start();
-		
+
 		// 处理聊天
 		new Thread(new Runnable() {
 

@@ -7,3 +7,12 @@ rent:436;
 introduce:给你们;
 },
 
+{
+id:张三武大国软123男;
+person:张三;
+name:明年;
+sell:2;
+rent:0;
+introduce:同;
+},
+
