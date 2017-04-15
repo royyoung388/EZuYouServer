@@ -1,20 +1,12 @@
 package server;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.print.attribute.standard.Sides;
-
 import chatport.ChatPort;
 import homeport.Home_Advertise;
 import homeport.Home_Image;
 import homeport.Home_Item;
 import loginport.Login;
 import loginport.Sign;
+import myport.Mydetil;
 import releaseport.Release;
 import strategy.Strategy;
 import strategy.Strategy_Image;
@@ -110,6 +102,16 @@ public class Server {
 			public void run() {
 				// TODO Auto-generated method stub
 				ChatPort chatPort = new ChatPort();
+			}
+		}).start();
+
+		// 处理My基本信息
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				Mydetil mydetil = new Mydetil();
 			}
 		}).start();
 	}

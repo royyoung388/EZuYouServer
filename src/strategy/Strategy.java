@@ -7,6 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 import fileutils.FileUtils;
+import fileutils.StrategyUtils;
 import keyword.KeyWord;
 
 public class Strategy {
@@ -57,7 +58,7 @@ public class Strategy {
 				
 				int position = inputStream.readInt();
 				
-				int count = FileUtils.GetImageCount_Strategy();
+				int count = StrategyUtils.GetImageCount_Strategy();
 				out.writeInt(count);
 				
 				System.out.println("strategy图片个数" + count);
@@ -68,7 +69,7 @@ public class Strategy {
 					out.writeUTF(string);
 				} else {
 					System.out.println("获取第" + position + "个item信息");
-					String string = FileUtils.ReadItemPosition_strategy(position);
+					String string = StrategyUtils.ReadItemPosition_strategy(position);
 					out.writeUTF(string);
 				}
 				

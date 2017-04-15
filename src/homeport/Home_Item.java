@@ -2,12 +2,11 @@ package homeport;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import fileutils.FileUtils;
+import fileutils.HomeUtils;
 import keyword.KeyWord;
 
 //传输列表信息
@@ -59,18 +58,17 @@ public class Home_Item {
 				
 				int position = inputStream.readInt();
 				
-				int count = FileUtils.GetImageCount();
+				int count = HomeUtils.GetImageCount();
 				out.writeInt(count);
 				
 				System.out.println("图片个数" + count);
 				
 				if (position == -1) {
 					System.out.println("获取所有item信息");
-					String string = FileUtils.Readfile("Home\\Home_Item.txt");
-					out.writeUTF(string);
+					out.writeUTF(HomeUtils.GetAllItem());
 				} else {
 					System.out.println("获取第" + position + "个item信息");
-					String string = FileUtils.ReadItemPosition(position);
+					String string = HomeUtils.ReadItemPosition(position);
 					out.writeUTF(string);
 				}
 				

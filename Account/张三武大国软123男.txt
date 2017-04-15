@@ -1,7 +1,6 @@
 {
 id:张三武大国软123男;
 username:张三;
-userpwd:123;
 userschool:武大;
 userschool_class:国软;
 usernumber:123;

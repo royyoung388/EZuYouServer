@@ -6,8 +6,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class FileUtils {
 
@@ -54,106 +52,26 @@ public class FileUtils {
 		return s;  
     }
     
-    //获取指定的item信息
-    public static String ReadItemPosition(int position) {
-    	
-		String string = FileUtils.Readfile("Home\\Home_Item.txt");
-		
-		 Pattern pattern = Pattern.compile("(\\{\\s*" +
-				 							"id:\\S*?;\\s*" +
-				 							"person:\\S*?;\\s*" +
-		 		 							"name:\\S*?;\\s*" +
-                 							"sell:\\S*?;\\s*" +
-                 							"rent:\\S*?;\\s*" +
-                 							"introduce:\\S*?;\\s*"
-                 							+ "\\},)\\s*");
-		 
-		 Matcher matcher = pattern.matcher(string);
-		 System.out.println("获取第" + position + "条item信息");
-		 
-		 int i = 0;
-		 String item = null;
-		 while (matcher.find()) {
-			if (position == i) {
-				item = matcher.group();
-				break;
-			}
-			i++;
-		}
-		 System.out.println("该内容为:" + item);
-		 return item;
-	}
+    //创建文件
+    public static void CreatFile(String path) {
+    	File file = new File(path);
+    	 if(file.exists()) {  
+             System.out.println("创建单个文件" + path + "失败，目标文件已存在！");  
+         }  
+    	 //创建目标文件  
+         try {  
+             if (file.createNewFile()) {  
+                 System.out.println("创建单个文件" + path + "成功！");  
+             } else {  
+                 System.out.println("创建单个文件" + path + "失败！");  
+             }  
+         } catch (IOException e) {  
+             e.printStackTrace();  
+             System.out.println("创建单个文件" + file + "失败！" + e.getMessage());  
+         }  
+    }
     
-  //获取指定的strategy_item信息
-    public static String ReadItemPosition_strategy(int position) {
-    	
-		String string = FileUtils.Readfile("Strategy\\Strategy_Item.txt");
-		
-		 Pattern pattern = Pattern.compile("(\\{\\s*" +
-				 							"id:\\S*?;\\s*" +
-				 							"person:\\S*?;\\s*" +
-		 		 							"program:\\S*?;\\s*" +
-                 							"money:\\S*?;\\s*" +
-                 							"detil:\\S*?;\\s*" +
-				 							"\\},)\\s*");
-		 
-		 Matcher matcher = pattern.matcher(string);
-		 System.out.println("获取第" + position + "条strategy_item信息");
-		 
-		 int i = 0;
-		 String item = null;
-		 while (matcher.find()) {
-			if (position == i) {
-				item = matcher.group();
-				break;
-			}
-			i++;
-		}
-		 System.out.println("该内容为:" + item);
-		 return item;
-	}
     
-    //获取图片个数
-    public static int GetImageCount() {
-    	
-		int count = 0;
-		int i = 0, j = 1;
-		
-		
-		while (true) {
-			File file = new File("Home\\Home_image\\image" + i + j + ".jpg");
-			if (file.exists()) {
-				count++;
-				j++;
-			} else if (j == 1) {
-				break;
-			} else {
-				i++;
-				j = 1;
-			}
-		}
-		return count;
-	}
     
-  //获取Strategy图片个数
-    public static int GetImageCount_Strategy() {
-    	
-		int count = 0;
-		int i = 0, j = 1;
-		
-		
-		while (true) {
-			File file = new File("Strategy\\Strategy_Image\\image" + i + j + ".jpg");
-			if (file.exists()) {
-				count++;
-				j++;
-			} else if (j == 1) {
-				break;
-			} else {
-				i++;
-				j = 1;
-			}
-		}
-		return count;
-	}
+   
 }

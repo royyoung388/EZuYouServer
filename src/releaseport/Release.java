@@ -1,9 +1,7 @@
 package releaseport;
 
 import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -36,7 +34,7 @@ public class Release {
 		}
 	}
 
-	//处理信息
+	// 处理信息
 	private class HandlerThread implements Runnable {
 
 		private Socket client;
@@ -52,47 +50,55 @@ public class Release {
 
 			try {
 				DataInputStream in = new DataInputStream(client.getInputStream());
-				
+
 				String id = in.readUTF();
 				String person = in.readUTF();
 				String name = in.readUTF();
 				String sell = in.readUTF();
 				String rent = in.readUTF();
 				String detil = in.readUTF();
-				
-				FileUtils.Writefile("Home\\Home_Item.txt", "{\r\n"
-						+ "id:" + id + ";\r\n"
-						+ "person:" + person + ";\r\n"
-						+ "name:" + name + ";\r\n"
-						+ "sell:" + sell + ";\r\n"
-						+ "rent:" + rent + ";\r\n"
-						+ "introduce:" + detil + ";\r\n"
-						+ "},\n");
-				
-				System.out.println("上传信息成功");
-				
-				int count = in.readInt();
-				
+
+				//寻找image的编号
 				int image_count = 0;
-				
+
 				while (new File("Home\\Home_image\\image" + image_count + "1" + ".jpg").exists()) {
 					image_count++;
 				}
-				
-				for (int i = 0; i < count; i++) {		
-					FileOutputStream fos = new FileOutputStream("Home\\Home_image\\image" + image_count  + (i + 1) + ".jpg");
-					
+
+				//写入信息
+				FileUtils.Writefile("Home\\Home_Item.txt", "{\r\n" 
+						//标识符
+						+ "id:" + id + ";\r\n" 
+						//编号
+						+ "tag:" + image_count +";\r\n"
+						//状态
+						+ "status:" + image_count +";\r\n"
+						+ "person:" + person + ";\r\n" 
+						+ "name:" + name + ";\r\n" 
+						+ "sell:" + sell + ";\r\n" 
+						+ "rent:" + rent + ";\r\n" 
+						+ "introduce:" + detil+ ";\r\n" 
+						+ "},\n");
+
+				System.out.println("上传信息成功");
+
+				int count = in.readInt();
+
+				for (int i = 0; i < count; i++) {
+					FileOutputStream fos = new FileOutputStream(
+							"Home\\Home_image\\image" + image_count + (i + 1) + ".jpg");
+
 					int size = in.readInt();
 					byte[] data = new byte[size];
 					int len = 0;
-                    while (len < size) {
-                        len += in.read(data, len, size - len);
-                    }
+					while (len < size) {
+						len += in.read(data, len, size - len);
+					}
 					fos.write(data);
 					fos.close();
 					System.out.println("发布图片" + (image_count + i) + (i + 1));
 				}
-				
+
 				in.close();
 				client.close();
 				System.out.println("发布成功");

@@ -1,5 +1,6 @@
 {
 id:张三武大国软123男;
+tag:0；
 person:张三;
 program:三人自行车出游;
 money:1500元/3天;

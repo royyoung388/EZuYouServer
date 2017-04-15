@@ -33,7 +33,7 @@ public class ChatPort {
 
 				clients.add(serverSocket.accept());
 
-				new HandlerThread(clients.get(index), index);
+				new HandlerThread(clients.get(index));
 
 				System.out.println("新的设备，连接chat：" + clients.get(index).getInetAddress().toString());
 				System.out.println("当前设备个数:" + clients.size());
@@ -49,11 +49,9 @@ public class ChatPort {
 	private class HandlerThread implements Runnable {
 
 		private Socket client;
-		private int index;
 
-		public HandlerThread(Socket client, int index) {
+		public HandlerThread(Socket client) {
 			this.client = client;
-			this.index = index;
 			new Thread(this).start();
 		}
 

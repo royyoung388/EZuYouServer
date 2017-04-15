@@ -7,6 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 import fileutils.FileUtils;
+import fileutils.UserUtils;
 import fileutils.CheckUserUtils;
 import keyword.KeyWord;
 
@@ -64,14 +65,33 @@ public class Sign {
 				case 1:
 					out.writeUTF("right");
 					System.out.println("注册成功");
+					
+					//UserUtils
+					UserUtils userUtils = new UserUtils(username, userpwd, 
+							userschool, userschool_class, usernumber, usersex);
+							
+					//所有账号的总和，相当于索引
 					FileUtils.Writefile("Login\\Login.txt", "{\r\n"
-													+ "username:" + username + ";\r\n"
-													+ "userpwd:" + userpwd + ";\r\n"
-													+ "userschool:" + userschool + ";\r\n"
-													+ "userschool_class:" + userschool_class + ";\r\n"
-													+ "usernumber:" + usernumber + ";\r\n"
-													+ "usersex:" + usersex + ";\r\n"
-													+ "},\n");
+											+ "id:" + userUtils.creatID() + ";\r\n"
+											+ "username:" + username + ";\r\n"
+											+ "userpwd:" + userpwd + ";\r\n"
+											+ "userschool:" + userschool + ";\r\n"
+											+ "userschool_class:" + userschool_class + ";\r\n"
+											+ "usernumber:" + usernumber + ";\r\n"
+											+ "usersex:" + usersex + ";\r\n"
+											+ "},\n");
+					
+					//创建每个账号的个人文件
+					FileUtils.CreatFile("Account\\" + userUtils.creatID() + ".txt");
+					//写入账号信息
+					FileUtils.Writefile("Account\\" + userUtils.creatID() + ".txt", "{\r\n"
+									+ "id:" + userUtils.creatID() + ";\r\n"
+									+ "username:" + username + ";\r\n"
+									+ "userschool:" + userschool + ";\r\n"
+									+ "userschool_class:" + userschool_class + ";\r\n"
+									+ "usernumber:" + usernumber + ";\r\n"
+									+ "usersex:" + usersex + ";\r\n"
+									+ "},\n");
 					break;
 				default:
 					out.writeUTF("error");

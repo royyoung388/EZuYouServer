@@ -1,32 +1,31 @@
-package homeport;
+package myport;
 
+import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import fileutils.FileUtils;
 import keyword.KeyWord;
 
-//处理主页的广告信息
-//向服务器传送图片
-public class Home_Advertise {
+public class Mydetil {
 
 	private ServerSocket serverSocket;
 
 	// 初始化，监听
-	public Home_Advertise() {
+	public Mydetil() {
 		// TODO Auto-generated constructor stub
-		System.out.println("Home_Advertise启动");
+		System.out.println("Mydetil启动");
 		try {
 
-			serverSocket = new ServerSocket(KeyWord.PORT_HOME_ADVERTISE);
+			serverSocket = new ServerSocket(KeyWord.PORT_MY);
 
 			while (true) {
 				// 一旦有堵塞, 则表示服务器与客户端获得了连接
 				Socket client = serverSocket.accept();
 
-				System.out.println("新的设备,获取广告图片：" + client.getInetAddress().toString());
+				System.out.println("新的设备，获取My基本信息：" + client.getInetAddress().toString());
 
 				new HandlerThread(client);
 			}
@@ -37,9 +36,7 @@ public class Home_Advertise {
 
 	// 处理这次连接
 	// 处理信息
-	// 广告处理
 	private class HandlerThread implements Runnable {
-
 		private Socket client;
 
 		public HandlerThread(Socket client) {
@@ -52,28 +49,22 @@ public class Home_Advertise {
 			// TODO Auto-generated method stub
 
 			try {
-
+				DataInputStream in = new DataInputStream(client.getInputStream());
 				DataOutputStream out = new DataOutputStream(client.getOutputStream());
-				FileInputStream fis = new FileInputStream("Home\\advertisement.jpg");
+				
+				//获取id
+				String id = in.readUTF();
 
-				int size = fis.available();
-				System.out.println("size = " + size);
-
-				byte[] data = new byte[size];
-				fis.read(data);
-				out.writeInt(size);
-				out.write(data);
-
-				out.flush();
-				out.close();
-				fis.close();
-				client.close();
-				System.out.println("图片发送成功");
+				//UserUtils userUtils = new UserUtils(id);
+				
+				out.writeUTF(FileUtils.Readfile("Account//" + id + ".txt"));
+				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
-				System.out.println("图片发送失败");
+				System.out.println("获取my基本信息出错");
 				e.printStackTrace();
 			}
 		}
+
 	}
 }
