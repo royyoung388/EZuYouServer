@@ -1,32 +1,31 @@
 package homeport;
 
-import java.io.DataOutputStream;
-import java.io.FileInputStream;
+import java.io.DataInputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import fileutils.HomeUtils;
 import keyword.KeyWord;
 
-//处理主页的广告信息
-//向服务器传送图片
-public class Home_Advertise {
-
+public class Home_Pay {
 	private ServerSocket serverSocket;
 
 	// 初始化，监听
-	public Home_Advertise() {
+	public Home_Pay() {
+		
 		// TODO Auto-generated constructor stub
-		System.out.println("Home_Advertise启动");
+		System.out.println("Home_Pay启动");
+
 		try {
 
-			serverSocket = new ServerSocket(KeyWord.PORT_HOME_ADVERTISE);
+			serverSocket = new ServerSocket(KeyWord.PORT_HOME_PAY);
 
 			while (true) {
 				// 一旦有堵塞, 则表示服务器与客户端获得了连接
 				Socket client = serverSocket.accept();
 
-				System.out.println("新的设备,获取广告图片：" + client.getInetAddress().toString());
+				System.out.println("新的设备，Home_Pay支付：" + client.getInetAddress().toString());
 
 				new HandlerThread(client);
 			}
@@ -37,7 +36,6 @@ public class Home_Advertise {
 
 	// 处理这次连接
 	// 处理信息
-	// 广告处理
 	private class HandlerThread implements Runnable {
 
 		private Socket client;
@@ -50,30 +48,27 @@ public class Home_Advertise {
 		@Override
 		public void run() {
 			// TODO Auto-generated method stub
-
 			try {
+				DataInputStream inputStream = new DataInputStream(client.getInputStream());
+				
+				String id = inputStream.readUTF();
+				System.out.println("获取id:" + id);
 
-				DataOutputStream out = new DataOutputStream(client.getOutputStream());
-				FileInputStream fis = new FileInputStream("Home\\advertisement.jpg");
+				int tag = inputStream.readInt();
+				System.out.println("获取tag" + tag);
 
-				int size = fis.available();
-				System.out.println("size = " + size);
-
-				byte[] data = new byte[size];
-				fis.read(data);
-				out.writeInt(size);
-				out.write(data);
-
-				out.flush();
-				out.close();
-				fis.close();
+				HomeUtils.chageStatus(id, tag);
+				
+				System.out.println("status修改成功");
+				
+				inputStream.close();
 				client.close();
-				System.out.println("广告图片发送成功");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
-				System.out.println("广告图片发送失败");
 				e.printStackTrace();
+				System.out.println("status修改失败");
 			}
+
 		}
 	}
 }

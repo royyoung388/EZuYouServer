@@ -8,7 +8,7 @@ import java.net.Socket;
 
 import fileutils.FileUtils;
 import fileutils.UserUtils;
-import fileutils.CheckUserUtils;
+import fileutils.LoginUtils;
 import keyword.KeyWord;
 
 //×¢²á
@@ -61,7 +61,7 @@ public class Sign {
 				String usernumber = in.readUTF();
 				String usersex = in.readUTF();
 
-				switch (CheckUserUtils.userIsExist(username, userpwd,userschool, usernumber)) {
+				switch (LoginUtils.userIsExist(username, userpwd,userschool, usernumber)) {
 				case 1:
 					out.writeUTF("right");
 					System.out.println("×¢²á³É¹¦");
@@ -98,6 +98,10 @@ public class Sign {
 					System.out.println("×¢²áÊ§°Ü");
 					break;
 				}
+				
+				in.close();
+				out.close();
+				client.close();
 
 			} catch (IOException e) {
 				// TODO Auto-generated catch block

@@ -75,6 +75,7 @@ public class Strategy {
 				
 				out.close();
 				inputStream.close();
+				client.close();
 
 				System.out.println("´«ÊäStrategy_Item³É¹¦");
 			} catch (IOException e) {

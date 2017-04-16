@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import fileutils.HomeUtils;
 import keyword.KeyWord;
 
 //获取image图片
@@ -40,6 +41,10 @@ public class Home_Image {
 	private class HandlerThread implements Runnable {
 
 		private Socket client;
+		private String id;
+		private int tag;
+		private DataInputStream inputStream;
+		private DataOutputStream outputStream;
 
 		public HandlerThread(Socket client) {
 			this.client = client;
@@ -52,52 +57,164 @@ public class Home_Image {
 
 			try {
 
-				DataOutputStream out = new DataOutputStream(client.getOutputStream());
-				DataInputStream inputStream = new DataInputStream(client.getInputStream());
+				outputStream = new DataOutputStream(client.getOutputStream());
+				inputStream = new DataInputStream(client.getInputStream());
 				
-				int position = inputStream.readInt();
+				id = inputStream.readUTF();
+				tag = inputStream.readInt();
 
-				//所有图片
-				if (position == -1) {
+				// 所有图片
+				if (tag == -1) {
+					System.out.println("获取所有的item的image信息");
 					int i = 0;
 					while (true) {
 						File file = new File("Home\\Home_image\\image" + i + "1.jpg");
 
 						if (file.exists()) {
-							FileInputStream fis = new FileInputStream(file);
-							int size = fis.available();
+							if (HomeUtils.isStatus(i)) {
+								transferImage(file, i);
+								
+								/*FileInputStream fis = new FileInputStream(file);
+								int size = fis.available();
 
-							System.out.println("传输图片" + i + 1);
-							System.out.println("size = " + size);
+								System.out.println("传输图片" + i + 1);
+								System.out.println("size = " + size);
 
-							byte[] data = new byte[size];
-							fis.read(data);
-							
-							out.writeInt(size);
-							out.write(data);
-							
-							out.flush();
+								byte[] data = new byte[size];
+								fis.read(data);
+
+								outputStream.writeInt(size);
+								outputStream.write(data);
+
+								outputStream.flush();
+								fis.close();
+								System.out.println("图片" + (i - 1) + "1发送成功");*/
+							}
 							i++;
-							fis.close();
-							System.out.println("图片" + (i - 1) + "1发送成功");
 						} else {
-							out.writeInt(0);
-							out.write(0);
+							outputStream.writeInt(0);
+							outputStream.write(0);
 							break;
 						}
 					}
-					
+				} else if (tag == -2) {
+					// 获取指定id的图片
+					System.out.println("获取指定id的image信息");
+					int i = 0;
+					while (true) {
+						File file = new File("Home\\Home_image\\image" + i + "1.jpg");
+
+						if (file.exists()) {
+							if (HomeUtils.isID(id, i)) {
+								transferImage(file, i);
+								
+								/*FileInputStream fis = new FileInputStream(file);
+								int size = fis.available();
+
+								System.out.println("传输图片" + i + 1);
+								System.out.println("size = " + size);
+
+								byte[] data = new byte[size];
+								fis.read(data);
+
+								outputStream.writeInt(size);
+								outputStream.write(data);
+
+								outputStream.flush();
+								fis.close();
+								System.out.println("图片" + (i - 1) + "1发送成功");*/
+							}
+							i++;
+						} else {
+							outputStream.writeInt(0);
+							outputStream.write(0);
+							break;
+						}
+					}
+				} else if (tag == -3) {
+					// 获取指定id的status为1的图片
+					System.out.println("获取指定id的status为1的图片");
+					int i = 0;
+					while (true) {
+						File file = new File("Home\\Home_image\\image" + i + "1.jpg");
+
+						if (file.exists()) {
+							if (HomeUtils.isID(id, i) && HomeUtils.isStatus(i)) {
+								transferImage(file, i);
+								
+								/*FileInputStream fis = new FileInputStream(file);
+								int size = fis.available();
+
+								System.out.println("传输图片" + i + 1);
+								System.out.println("size = " + size);
+
+								byte[] data = new byte[size];
+								fis.read(data);
+
+								outputStream.writeInt(size);
+								outputStream.write(data);
+
+								outputStream.flush();
+								fis.close();
+								System.out.println("图片" + (i - 1) + "1发送成功");*/
+							}
+							i++;
+						} else {
+							outputStream.writeInt(0);
+							outputStream.write(0);
+							break;
+						}
+					}
+				} else if (tag == -4) {
+					// 获取指定id的status为0的图片
+					System.out.println("获取指定id的status为0的图片");
+					int i = 0;
+					while (true) {
+						File file = new File("Home\\Home_image\\image" + i + "1.jpg");
+
+						if (file.exists()) {
+							if (HomeUtils.isID(id, i) && !HomeUtils.isStatus(i)) {
+								
+								transferImage(file, i);
+								
+								/*FileInputStream fis = new FileInputStream(file);
+								int size = fis.available();
+
+								System.out.println("传输图片" + i + 1);
+								System.out.println("size = " + size);
+
+								byte[] data = new byte[size];
+								fis.read(data);
+
+								outputStream.writeInt(size);
+								outputStream.write(data);
+
+								outputStream.flush();
+								fis.close();
+								System.out.println("图片" + (i - 1) + "1发送成功");*/
+							}
+							i++;
+						} else {
+							outputStream.writeInt(0);
+							outputStream.write(0);
+							break;
+						}
+					}
 				} else {
-					//指定图片
+					// 获取指定tag图片
+					System.out.println("获取指定tag的image信息");
 					int i = 1;
 					while (true) {
-						File file = new File("Home\\Home_image\\image" + position + i + ".jpg");
-						
+						File file = new File("Home\\Home_image\\image" + tag + i + ".jpg");
+
 						if (file.exists()) {
-							FileInputStream fis = new FileInputStream(file);
+
+							transferImage(file, i);
+							
+							/*FileInputStream fis = new FileInputStream(file);
 							int size = fis.available();
 
-							System.out.println("传输图片" + position + i);
+							System.out.println("传输图片" + tag + i);
 							System.out.println("size = " + size);
 
 							byte[] data = new byte[size];
@@ -106,19 +223,22 @@ public class Home_Image {
 							out.write(data);
 							out.flush();
 
-							i++;
 							fis.close();
-							System.out.println("图片" + (i - 1) + "发送成功");
+							System.out.println("图片" + (i - 1) + "发送成功");*/
+
+							i++;
+
 						} else {
-							out.writeInt(0);
-							out.write(0);
-							out.flush();
+							outputStream.writeInt(0);
+							outputStream.write(0);
+							outputStream.flush();
 							break;
 						}
 					}
 				}
 
-				out.close();
+				inputStream.close();
+				outputStream.close();
 				client.close();
 
 				System.out.println("传输image成功");
@@ -129,6 +249,22 @@ public class Home_Image {
 				e.printStackTrace();
 			}
 		}
+		
+		private void  transferImage(File file, int i) throws IOException {
+			FileInputStream fis = new FileInputStream(file);
+			int size = fis.available();
 
-	}
+			System.out.println("传输图片" + i + i);
+			System.out.println("size = " + size);
+
+			byte[] data = new byte[size];
+			fis.read(data);
+			outputStream.writeInt(size);
+			outputStream.write(data);
+			outputStream.flush();
+
+			fis.close();
+			System.out.println("图片" + (i - 1) + "发送成功");
+		}
+	}	
 }

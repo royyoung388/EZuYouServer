@@ -6,4 +6,14 @@ userschool_class:¹úÈí;
 usernumber:123;
 usersex:ÄĞ;
 },
+{
+item:home;
+tag:1;
+status:1;
+},
+{
+item:home;
+tag:1;
+status:0;
+},
 

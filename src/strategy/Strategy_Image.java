@@ -119,6 +119,7 @@ public class Strategy_Image {
 				}
 
 				out.close();
+				inputStream.close();
 				client.close();
 
 				System.out.println("´«Êästrategy_image³É¹¦");

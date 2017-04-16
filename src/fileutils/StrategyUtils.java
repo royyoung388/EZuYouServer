@@ -11,7 +11,7 @@ public class StrategyUtils {
     	
 		String string = FileUtils.Readfile("Strategy\\Strategy_Item.txt");
 		
-		 Pattern pattern = Pattern.compile("(\\{\\s*" +
+		Pattern pattern = Pattern.compile("(\\{\\s*" +
 				 							"id:\\S*?;\\s*" +
 				 							"tag:" + position + ";\\s*" +
 				 							"person:\\S*?;\\s*" +

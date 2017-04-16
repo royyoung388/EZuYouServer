@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import fileutils.CheckUserUtils;
+import fileutils.LoginUtils;
 import fileutils.UserUtils;
 import keyword.KeyWord;
 
@@ -57,7 +57,7 @@ public class Login {
 				String username = in.readUTF();
 				String userpwd = in.readUTF();
 
-				switch (CheckUserUtils.userIsExist(username, userpwd, "0", "0")) {
+				switch (LoginUtils.userIsExist(username, userpwd, "0", "0")) {
 				case 0:
 					out.writeUTF("right");
 					System.out.println("µÇÂ¼/×¢²á³É¹¦");
@@ -72,6 +72,10 @@ public class Login {
 					System.out.println("µÇÂ¼/×¢²áÊ§°Ü");
 					break;
 				}
+				
+				in.close();
+				out.close();
+				client.close();
 
 			} catch (IOException e) {
 				// TODO Auto-generated catch block

@@ -6,15 +6,15 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import fileutils.FileUtils;
+import fileutils.MyUtils;
 import keyword.KeyWord;
 
-public class Mydetil {
+public class MyDetil {
 
 	private ServerSocket serverSocket;
 
 	// 初始化，监听
-	public Mydetil() {
+	public MyDetil() {
 		// TODO Auto-generated constructor stub
 		System.out.println("Mydetil启动");
 		try {
@@ -54,11 +54,18 @@ public class Mydetil {
 				
 				//获取id
 				String id = in.readUTF();
+				System.out.println("获取到ID:" + id);
 
 				//UserUtils userUtils = new UserUtils(id);
 				
-				out.writeUTF(FileUtils.Readfile("Account//" + id + ".txt"));
+				out.writeUTF(MyUtils.getMyDetil(id));
 				
+				in.close();
+				out.close();
+				client.close();
+				
+				System.out.println("获取my基本信息成功");
+
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				System.out.println("获取my基本信息出错");

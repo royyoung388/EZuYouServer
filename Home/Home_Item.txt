@@ -1,11 +1,22 @@
 {
 id:张三武大国软123男;
 tag:0;
+status:0;
+person:张三;
+name:命;
+sell:0;
+rent:3;
+introduce:命;
+},
+
+{
+id:张三武大国软123男;
+tag:1;
 status:1;
 person:张三;
-name:哈哈;
-sell:2;
-rent:2;
-introduce:哦工资;
+name:哦哦;
+sell:0;
+rent:6;
+introduce:diminish;
 },
 

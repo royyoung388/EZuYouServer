@@ -56,24 +56,39 @@ public class Home_Item {
 				DataOutputStream out = new DataOutputStream(client.getOutputStream());
 				DataInputStream inputStream = new DataInputStream(client.getInputStream());
 				
-				int position = inputStream.readInt();
+				String id = inputStream.readUTF();
+				int tag = inputStream.readInt();
 				
 				int count = HomeUtils.GetImageCount();
 				out.writeInt(count);
 				
 				System.out.println("图片个数" + count);
 				
-				if (position == -1) {
+				if (tag == -1) {
 					System.out.println("获取所有item信息");
 					out.writeUTF(HomeUtils.GetAllItem());
+				} else if (tag == -2) {
+					//获取指定id的信息
+					System.out.println("获取指定id:的item信息");
+					out.writeUTF(HomeUtils.getIdItem(id));
+				} else if (tag == -3) {
+					// 获取指定id的status为1的item
+					System.out.println("获取指定id的status为1的item");
+					out.writeUTF(HomeUtils.getIdStatusItem(id, 1));
+				} else if (tag == -4) {
+					// 获取指定id的status为0的item
+					System.out.println("获取指定id的status为0的item");
+					out.writeUTF(HomeUtils.getIdStatusItem(id, 0));
 				} else {
-					System.out.println("获取第" + position + "个item信息");
-					String string = HomeUtils.ReadItemPosition(position);
+					//获取指定tag的信息
+					System.out.println("获取tag:" + tag + "的item信息");
+					String string = HomeUtils.ReadItemPosition(tag);
 					out.writeUTF(string);
 				}
 				
 				out.close();
 				inputStream.close();
+				client.close();
 
 				System.out.println("传输Home_Item成功");
 			} catch (IOException e) {

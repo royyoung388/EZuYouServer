@@ -15,7 +15,7 @@ public class FileUtils {
 	    {  
 	    //使用BufferedReader和BufferedWriter进行文件复制（操作的是字符,以行为单位读入字符）  
     		
-	    BufferedWriter bw=new BufferedWriter(new FileWriter(file, true));   
+	    BufferedWriter bw = new BufferedWriter(new FileWriter(file, true));   
 	    bw.write(str);  
 	    //由于BufferedReader的rendLIne()是不读入换行符的，所以写入换行时须用newLine()方法  
 	    bw.newLine();  
@@ -36,13 +36,14 @@ public class FileUtils {
     	try  
         {  
         //使用BufferedReader和BufferedWriter进行文件复制（操作的是字符,以行为单位读入字符）  
-    	BufferedReader br=new BufferedReader(new FileReader(file));  
+    	BufferedReader br = new BufferedReader(new FileReader(file));  
          
     	String str = null;
 
          while ((str = br.readLine()) != null) {
              s += str;
          }
+         
          br.close();  
          }  
     	 catch (IOException e)  

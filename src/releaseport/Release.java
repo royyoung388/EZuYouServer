@@ -72,7 +72,7 @@ public class Release {
 						//编号
 						+ "tag:" + image_count +";\r\n"
 						//状态
-						+ "status:" + image_count +";\r\n"
+						+ "status:1;\r\n"
 						+ "person:" + person + ";\r\n" 
 						+ "name:" + name + ";\r\n" 
 						+ "sell:" + sell + ";\r\n" 
@@ -98,6 +98,15 @@ public class Release {
 					fos.close();
 					System.out.println("发布图片" + (image_count + i) + (i + 1));
 				}
+				
+				//写到对应的个人账号中
+				FileUtils.Writefile("Account\\" + id + ".txt", 
+						"{\r\n" +
+						"item:home" + ";\r\n" + 
+						"tag:" + image_count +";\r\n" +
+						//状态
+						"status:1;\r\n" +
+						"},\n");
 
 				in.close();
 				client.close();

@@ -8,7 +8,6 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
-import fileutils.FileUtils;
 import keyword.KeyWord;
 
 public class ChatPort {
@@ -107,6 +106,7 @@ public class ChatPort {
 
 				out.close();
 				inputStream.close();
+				client.close();
 
 			} catch (IOException e) {
 				// TODO Auto-generated catch block

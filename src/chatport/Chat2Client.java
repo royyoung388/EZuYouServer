@@ -1,10 +1,8 @@
 package chatport;
 
-import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
-import java.util.jar.Attributes.Name;
 
 import keyword.KeyWord;
 
@@ -42,6 +40,13 @@ public class Chat2Client extends Thread {
 			out.close();
 		} catch (IOException e) {
 			e.printStackTrace();
+		} finally {
+			try {
+				socket.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 }

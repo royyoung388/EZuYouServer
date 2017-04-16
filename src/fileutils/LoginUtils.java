@@ -3,7 +3,7 @@ package fileutils;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CheckUserUtils {
+public class LoginUtils {
 	public static int userIsExist(String username, String userpwd,String userschool, String usernumber) {
 		String detil = FileUtils.Readfile("Login\\Login.txt");
 		String name = "username:" + username + ";";
