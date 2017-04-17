@@ -76,7 +76,7 @@ public class HomeUtils {
     public static String getIdStatusItem(String id, int status) {
     	String string = FileUtils.Readfile("Home\\Home_Item.txt");
 
-		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?id:" + id + ";[^\\{\\}]*?status:" + status + "[^\\{\\}]*?\\},\\s*)");
+		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?id:" + id + ";[^\\{\\}]*?status:" + status + ";[^\\{\\}]*?\\},\\s*)");
 		Matcher matcher = pattern.matcher(string);
 		System.out.println("获取指定id和status的item");
 
@@ -121,7 +121,6 @@ public class HomeUtils {
 		if (matcher.find()) {
 			System.out.println("item的tag:" + tag + "的status信息:1");
 			return true;
-
 		}
 		
 		System.out.println("item的tag:" + tag + "的status信息:0");

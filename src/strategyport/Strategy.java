@@ -1,4 +1,4 @@
-package strategy;
+package strategyport;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -11,7 +11,7 @@ import fileutils.StrategyUtils;
 import keyword.KeyWord;
 
 public class Strategy {
-	
+
 	private ServerSocket serverSocket;
 
 	// 初始化，监听
@@ -55,24 +55,30 @@ public class Strategy {
 
 				DataOutputStream out = new DataOutputStream(client.getOutputStream());
 				DataInputStream inputStream = new DataInputStream(client.getInputStream());
-				
-				int position = inputStream.readInt();
-				
+
+				String id = inputStream.readUTF();
+				int tag = inputStream.readInt();
+
 				int count = StrategyUtils.GetImageCount_Strategy();
 				out.writeInt(count);
-				
+
 				System.out.println("strategy图片个数" + count);
-				
-				if (position == -1) {
+
+				if (tag == -1) {
 					System.out.println("获取所有Strategy信息");
 					String string = FileUtils.Readfile("Strategy\\Strategy_Item.txt");
+					System.out.println("获取所有strategy信息:" + string);
 					out.writeUTF(string);
+				} else if (tag == -2) {
+					// 获取指定id的strategy信息
+					System.out.println("获取指定id为" + id + "的strategy信息");
+					out.writeUTF(StrategyUtils.ReadId_strategy(id));
 				} else {
-					System.out.println("获取第" + position + "个item信息");
-					String string = StrategyUtils.ReadItemPosition_strategy(position);
+					String string = StrategyUtils.ReadItemPosition_strategy(tag);
+					System.out.println("获取第" + tag + "个strategy信息:" + string);
 					out.writeUTF(string);
 				}
-				
+
 				out.close();
 				inputStream.close();
 				client.close();

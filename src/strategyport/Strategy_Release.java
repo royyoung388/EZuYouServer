@@ -1,4 +1,4 @@
-package releaseport;
+package strategyport;
 
 import java.io.DataInputStream;
 import java.io.File;
@@ -8,25 +8,25 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 import fileutils.FileUtils;
-import fileutils.ReleaseUtils;
 import keyword.KeyWord;
 
-public class Release {
+public class Strategy_Release {
+	
 	private ServerSocket serverSocket;
 
 	// 初始化，监听
-	public Release() {
+	public Strategy_Release() {
 		// TODO Auto-generated constructor stub
-		System.out.println("Release启动");
+		System.out.println("Strategy_Release启动");
 		try {
 
-			serverSocket = new ServerSocket(KeyWord.PORT_RELEASE);
+			serverSocket = new ServerSocket(KeyWord.PORT_STRATEGY_RELEASE);
 
 			while (true) {
 				// 一旦有堵塞, 则表示服务器与客户端获得了连接
 				Socket client = serverSocket.accept();
 
-				System.out.println("新的设备,发布消息：" + client.getInetAddress().toString());
+				System.out.println("新的设备,发布Strategy_Release消息：" + client.getInetAddress().toString());
 
 				new HandlerThread(client);
 			}
@@ -54,41 +54,22 @@ public class Release {
 
 				String id = in.readUTF();
 				String person = in.readUTF();
-				String name = in.readUTF();
-				String sell = in.readUTF();
-				String rent = in.readUTF();
+				String program = in.readUTF();
+				String money = in.readUTF();
 				String detil = in.readUTF();
 
 				//寻找image的编号
 				int image_count = 0;
 
-				while (new File("Home\\Home_image\\image" + image_count + "1" + ".jpg").exists()) {
+				while (new File("Strategy\\Strategy_Image\\image" + image_count + "1" + ".jpg").exists()) {
 					image_count++;
 				}
-
-				//写入信息
-				FileUtils.Writefile("Home\\Home_Item.txt", "{\r\n" 
-						//标识符
-						+ "id:" + id + ";\r\n" 
-						//编号
-						+ "tag:" + image_count +";\r\n"
-						//状态
-						+ "status:1;\r\n"
-						+ "person:" + person + ";\r\n"
-						+ "school" + ReleaseUtils.getSchool(id) + ";\r\n"
-						+ "name:" + name + ";\r\n" 
-						+ "sell:" + sell + ";\r\n" 
-						+ "rent:" + rent + ";\r\n" 
-						+ "introduce:" + detil+ ";\r\n" 
-						+ "},\n");
-
-				System.out.println("上传信息成功");
 
 				int count = in.readInt();
 
 				for (int i = 0; i < count; i++) {
 					FileOutputStream fos = new FileOutputStream(
-							"Home\\Home_image\\image" + image_count + (i + 1) + ".jpg");
+							"Strategy\\Strategy_Image\\image" + image_count + (i + 1) + ".jpg");
 
 					int size = in.readInt();
 					byte[] data = new byte[size];
@@ -101,21 +82,37 @@ public class Release {
 					System.out.println("发布图片" + (image_count + i) + (i + 1));
 				}
 				
+				//写入信息
+				FileUtils.Writefile("Strategy\\Strategy_Item.txt", 
+						"{\r\n" 
+						//标识符
+						+ "id:" + id + ";\r\n" 
+						//编号
+						+ "tag:" + image_count +";\r\n"
+						+ "person:" + person + ";\r\n" 
+						+ "program:" + program + ";\r\n" 
+						+ "money:" + money + ";\r\n" 
+						+ "detil:" + detil+ ";\r\n" 
+						+ "},\n");
+
+				System.out.println("上传Strategy_Release信息成功");
+
+				
 				//写到对应的个人账号中
 				FileUtils.Writefile("Account\\" + id + ".txt", 
 						"{\r\n" +
-						"item:home" + ";\r\n" + 
+						"item:strategy" + ";\r\n" + 
 						"tag:" + image_count +";\r\n" +
 						//状态
-						"status:1;\r\n" +
+						"status:" + (person == null ? "0" : "1") + "1;\r\n" +
 						"},\n");
 
 				in.close();
 				client.close();
-				System.out.println("发布成功");
+				System.out.println("Strategy_Release发布成功");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
-				System.out.println("图片发布失败");
+				System.out.println("Strategy_Release发布失败");
 				e.printStackTrace();
 			}
 		}

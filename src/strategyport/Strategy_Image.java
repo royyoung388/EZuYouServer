@@ -1,4 +1,4 @@
-package strategy;
+package strategyport;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import fileutils.StrategyUtils;
 import keyword.KeyWord;
 
 public class Strategy_Image {
@@ -55,10 +56,11 @@ public class Strategy_Image {
 				DataOutputStream out = new DataOutputStream(client.getOutputStream());
 				DataInputStream inputStream = new DataInputStream(client.getInputStream());
 				
-				int position = inputStream.readInt();
+				String id = inputStream.readUTF();
+				int tag = inputStream.readInt();
 
 				//所有图片
-				if (position == -1) {
+				if (tag == -1) {
 					int i = 0;
 					while (true) {
 						File file = new File("Strategy\\Strategy_Image\\image" + i + "1.jpg");
@@ -87,17 +89,50 @@ public class Strategy_Image {
 						}
 					}
 					
-				} else {
+				} if (tag == -2) {
+					// 获取指定id的Strategy——Image消息
+					int i = 0;
+					while (true) {
+						File file = new File("Strategy\\Strategy_Image\\image" + i + "1.jpg");
+
+						if (file.exists()) {
+							if (StrategyUtils.isStrategyID(id, tag)) {
+							FileInputStream fis = new FileInputStream(file);
+							int size = fis.available();
+
+							System.out.println("传输strategy图片" + i + 1);
+							System.out.println("size = " + size);
+
+							byte[] data = new byte[size];
+							fis.read(data);
+							
+							out.writeInt(size);
+							out.write(data);
+							
+							out.flush();
+							i++;
+							fis.close();
+							System.out.println("strategy图片" + (i - 1) + "1发送成功");
+							}
+						} else {
+							out.writeInt(0);
+							out.write(0);
+							break;
+						}
+					}
+				}
+				
+				else {
 					//指定图片
 					int i = 1;
 					while (true) {
-						File file = new File("Strategy\\Strategy_Image\\image" + position + i + ".jpg");
+						File file = new File("Strategy\\Strategy_Image\\image" + tag + i + ".jpg");
 						
 						if (file.exists()) {
 							FileInputStream fis = new FileInputStream(file);
 							int size = fis.available();
 
-							System.out.println("传输strategy图片" + position + i);
+							System.out.println("传输strategy图片" + tag + i);
 							System.out.println("size = " + size);
 
 							byte[] data = new byte[size];

@@ -7,10 +7,12 @@ import homeport.Home_Item;
 import homeport.Home_Pay;
 import loginport.Login;
 import loginport.Sign;
+import myport.Change_Pwd;
 import myport.MyDetil;
 import releaseport.Release;
-import strategy.Strategy;
-import strategy.Strategy_Image;
+import strategyport.Strategy;
+import strategyport.Strategy_Image;
+import strategyport.Strategy_Release;
 
 public class Server {
 	public static void main(String[] args) {
@@ -76,6 +78,16 @@ public class Server {
 			}
 		}).start();
 
+		// 处理Strategy_Release
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				new Strategy_Release();
+			}
+		}).start();
+
 		// 处理登录
 		new Thread(new Runnable() {
 
@@ -122,7 +134,17 @@ public class Server {
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
-				 new MyDetil();
+				new MyDetil();
+			}
+		}).start();
+
+		// 处理修改密码
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				new Change_Pwd();
 			}
 		}).start();
 	}
