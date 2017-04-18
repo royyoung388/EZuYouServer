@@ -72,7 +72,7 @@ public class Home_Image {
 
 						if (file.exists()) {
 							if (HomeUtils.isStatus(i)) {
-								transferImage(file, i);
+								transferImage(file);
 								
 								/*FileInputStream fis = new FileInputStream(file);
 								int size = fis.available();
@@ -106,7 +106,7 @@ public class Home_Image {
 
 						if (file.exists()) {
 							if (HomeUtils.isID(id, i)) {
-								transferImage(file, i);
+								transferImage(file);
 								
 								/*FileInputStream fis = new FileInputStream(file);
 								int size = fis.available();
@@ -140,7 +140,7 @@ public class Home_Image {
 
 						if (file.exists()) {
 							if (HomeUtils.isID(id, i) && HomeUtils.isStatus(i)) {
-								transferImage(file, i);
+								transferImage(file);
 								
 								/*FileInputStream fis = new FileInputStream(file);
 								int size = fis.available();
@@ -175,7 +175,7 @@ public class Home_Image {
 						if (file.exists()) {
 							if (HomeUtils.isID(id, i) && !HomeUtils.isStatus(i)) {
 								
-								transferImage(file, i);
+								transferImage(file);
 								
 								/*FileInputStream fis = new FileInputStream(file);
 								int size = fis.available();
@@ -209,7 +209,7 @@ public class Home_Image {
 
 						if (file.exists()) {
 
-							transferImage(file, i);
+							transferImage(file);
 							
 							/*FileInputStream fis = new FileInputStream(file);
 							int size = fis.available();
@@ -250,11 +250,11 @@ public class Home_Image {
 			}
 		}
 		
-		private void  transferImage(File file, int i) throws IOException {
+		private void  transferImage(File file) throws IOException {
 			FileInputStream fis = new FileInputStream(file);
 			int size = fis.available();
 
-			System.out.println("传输图片" + i + i);
+			System.out.println("transferImage传输图片");
 			System.out.println("size = " + size);
 
 			byte[] data = new byte[size];
@@ -264,7 +264,7 @@ public class Home_Image {
 			outputStream.flush();
 
 			fis.close();
-			System.out.println("图片" + (i - 1) + "发送成功");
+			System.out.println("transferImage成功");
 		}
 	}	
 }

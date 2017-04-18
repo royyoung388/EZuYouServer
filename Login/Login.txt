@@ -1,10 +1,10 @@
 {
-id:张三武大国软123男;
-username:张三;
-userpwd:123;
-userschool:武大;
-userschool_class:国软;
-usernumber:123;
+id:孙阳武汉大学国际软件学院2016302580250男;
+username:孙阳;
+userpwd:123456;
+userschool:武汉大学;
+userschool_class:国际软件学院;
+usernumber:2016302580250;
 usersex:男;
 },
 

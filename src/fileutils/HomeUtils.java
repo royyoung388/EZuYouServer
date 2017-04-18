@@ -54,7 +54,7 @@ public class HomeUtils {
 	}
     
     //获取所有的status为1的item信息
-    public static String GetAllItem() {
+    public static String getStatus1Item() {
 		String string = FileUtils.Readfile("Home\\Home_Item.txt");
 		
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?status:1;[^\\{\\}]*?\\},\\s*)");

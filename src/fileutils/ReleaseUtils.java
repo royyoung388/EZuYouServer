@@ -10,7 +10,7 @@ public class ReleaseUtils {
 		
 		String string = FileUtils.Readfile("Account\\" + id + ".txt");
 		
-		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?school:(\\S*);[^\\{\\}]*?\\},\\s*)");
+		Pattern pattern = Pattern.compile("\\{[^\\{\\}]*?userschool:(\\S*?);[^\\{\\}]*?\\},\\s*");
 
 		Matcher matcher = pattern.matcher(string);
 		System.out.println("获取id 为:" + id + "的school信息");

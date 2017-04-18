@@ -16,4 +16,6 @@ public class KeyWord {
 	public final static int PORT_HOME_PAY = 30011;
 	public final static int PORT_STRATEGY_RELEASE = 30012;
 	public final static int PORT_MY_CHANGE_PWD = 30013;
+	public final static int PORT_SEARCH_ITEM = 30014;
+	public final static int PORT_SEARCH_IMAGE = 30015;
 }

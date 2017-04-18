@@ -61,12 +61,11 @@ public class Home_Item {
 				
 				int count = HomeUtils.GetImageCount();
 				out.writeInt(count);
-				
 				System.out.println("图片个数" + count);
 				
 				if (tag == -1) {
-					System.out.println("获取所有item信息");
-					out.writeUTF(HomeUtils.GetAllItem());
+					System.out.println("获取所有status为1的item信息");
+					out.writeUTF(HomeUtils.getStatus1Item());
 				} else if (tag == -2) {
 					//获取指定id的信息
 					System.out.println("获取指定id:的item信息");
