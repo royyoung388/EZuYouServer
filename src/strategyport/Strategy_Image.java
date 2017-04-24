@@ -12,7 +12,7 @@ import fileutils.StrategyUtils;
 import keyword.KeyWord;
 
 public class Strategy_Image {
-	
+
 	private ServerSocket serverSocket;
 
 	// 初始化，监听
@@ -55,11 +55,11 @@ public class Strategy_Image {
 
 				DataOutputStream out = new DataOutputStream(client.getOutputStream());
 				DataInputStream inputStream = new DataInputStream(client.getInputStream());
-				
+
 				String id = inputStream.readUTF();
 				int tag = inputStream.readInt();
 
-				//所有图片
+				// 所有图片
 				if (tag == -1) {
 					int i = 0;
 					while (true) {
@@ -74,10 +74,10 @@ public class Strategy_Image {
 
 							byte[] data = new byte[size];
 							fis.read(data);
-							
+
 							out.writeInt(size);
 							out.write(data);
-							
+
 							out.flush();
 							i++;
 							fis.close();
@@ -88,46 +88,47 @@ public class Strategy_Image {
 							break;
 						}
 					}
-					
-				} if (tag == -2) {
+
+				}
+				if (tag == -2) {
 					// 获取指定id的Strategy——Image消息
 					int i = 0;
 					while (true) {
 						File file = new File("Strategy\\Strategy_Image\\image" + i + "1.jpg");
 
 						if (file.exists()) {
-							if (StrategyUtils.isStrategyID(id, tag)) {
-							FileInputStream fis = new FileInputStream(file);
-							int size = fis.available();
+							if (StrategyUtils.isStrategyID(id, i)) {
+								FileInputStream fis = new FileInputStream(file);
+								int size = fis.available();
 
-							System.out.println("传输strategy图片" + i + 1);
-							System.out.println("size = " + size);
+								System.out.println("传输strategy图片" + i + 1);
+								System.out.println("size = " + size);
 
-							byte[] data = new byte[size];
-							fis.read(data);
-							
-							out.writeInt(size);
-							out.write(data);
-							
-							out.flush();
-							i++;
-							fis.close();
-							System.out.println("strategy图片" + (i - 1) + "1发送成功");
+								byte[] data = new byte[size];
+								fis.read(data);
+
+								out.writeInt(size);
+								out.write(data);
+
+								out.flush();
+								i++;
+								fis.close();
+								System.out.println("strategy图片" + (i - 1) + "1发送成功");
+							} else {
+								out.writeInt(0);
+								out.write(0);
+								break;
 							}
-						} else {
-							out.writeInt(0);
-							out.write(0);
-							break;
 						}
 					}
 				}
-				
+
 				else {
-					//指定图片
+					// 指定图片
 					int i = 1;
 					while (true) {
 						File file = new File("Strategy\\Strategy_Image\\image" + tag + i + ".jpg");
-						
+
 						if (file.exists()) {
 							FileInputStream fis = new FileInputStream(file);
 							int size = fis.available();

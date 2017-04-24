@@ -10,30 +10,54 @@ usersex:ÄĞ;
 {
 item:home;
 tag:0;
-status:1;
+status:0;
 },
 
 {
 item:home;
 tag:1;
-status:1;
+status:0;
 },
 
 {
 item:home;
 tag:2;
-status:1;
+status:0;
 },
 
 {
 item:strategy;
 tag:0;
-status:11;
+status:0;
 },
 
 {
 item:home;
 tag:3;
+status:1;
+},
+
+{
+item:home;
+tag:4;
+status:1;
+},
+
+{
+item:home;
+tag:5;
+status:1;
+},
+
+{
+item:strategy;
+tag:1;
+status:11;
+},
+
+{
+item:home;
+tag:4;
 status:1;
 },
 

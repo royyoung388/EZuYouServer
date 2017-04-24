@@ -9,6 +9,7 @@ import loginport.Login;
 import loginport.Sign;
 import myport.Change_Pwd;
 import myport.MyDetil;
+import myport.Upload_Image;
 import releaseport.Release;
 import searchport.Search_Image;
 import searchport.Search_Item;
@@ -137,6 +138,16 @@ public class Server {
 			public void run() {
 				// TODO Auto-generated method stub
 				new MyDetil();
+			}
+		}).start();
+
+		// 处理Myupload_Image信息
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				new Upload_Image();
 			}
 		}).start();
 

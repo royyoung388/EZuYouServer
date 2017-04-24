@@ -1,7 +1,7 @@
 {
 id:孙阳武汉大学国际软件学院2016302580250男;
 tag:0;
-status:1;
+status:0;
 person:孙阳;
 school:武汉大学;
 name:山地车;
@@ -37,12 +37,24 @@ introduce:现在换了一个新书包，这个这个旧的用不到了，想出手。放着也是放着。;
 {
 id:孙阳武汉大学国际软件学院2016302580250男;
 tag:3;
-status:1;
+status:0;
 person:孙阳;
 school:武汉大学;
 name:雷蛇机械键盘;
 sell:0;
 rent:8;
 introduce:雷蛇的机械键盘，手感特别好。但是现在入手了一个更好的，所以想把这个旧的租出去。;
+},
+
+{
+id:刘洋武大国软123456男;
+tag:4;
+status:1;
+person:刘洋;
+school:武大;
+name:书包;
+sell:100;
+rent:3;
+introduce:书包;
 },
 

@@ -56,6 +56,9 @@ public class Login {
 
 				String username = in.readUTF();
 				String userpwd = in.readUTF();
+				
+				System.out.println("username:" + username);
+				System.out.println("userpwd:" + userpwd);
 
 				switch (LoginUtils.userIsExist(username, userpwd, "0", "0")) {
 				case 0:
@@ -64,7 +67,7 @@ public class Login {
 					UserUtils userUtils = new UserUtils(username, userpwd);
 					out.writeUTF(userUtils.getID());
 					break;
-				case 3:
+				case 2:
 					out.writeUTF("用户已存在");
 					break;
 				default:

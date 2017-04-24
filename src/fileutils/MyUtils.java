@@ -18,7 +18,7 @@ public class MyUtils {
 		//获取my基本信息	
 		System.out.println("获取my基本信息");
 
-		String string = FileUtils.Readfile("Account//" + id + ".txt");
+		String string = FileUtils.Readfile("Account\\" + id + ".txt");
 		
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?id:" + id + ";[^\\{\\}]*?\\},\\s*)");
 		Matcher matcher = pattern.matcher(string);
@@ -36,7 +36,7 @@ public class MyUtils {
 		
 		// 获取租售信息，trade
 		System.out.println("获取租售信息，trade");
-		String string = FileUtils.Readfile("Account//" + id + ".txt");
+		String string = FileUtils.Readfile("Account\\" + id + ".txt");
 
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?item:home;[^\\{\\}]*?\\},\\s*)");
 		Matcher matcher = pattern.matcher(string);
@@ -107,6 +107,7 @@ public class MyUtils {
 					str = reader.readLine();
 					
 					str = "userpwd:" + pwd_new + ";\r\n";
+					writer.write(str + "\r\n");
 
 					flag = true;
 				} else

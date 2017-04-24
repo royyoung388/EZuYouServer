@@ -29,16 +29,9 @@ public class UserUtils {
 
 	//获取id
 	public String getID() {
+		System.out.println("获取id");
 		String all = FileUtils.Readfile("Login\\Login.txt");
-		String string = "\\{\\s*"
-				+ "id:(\\S*?);\\s*"
-				+ "username:" + username + ";\\s*"
-				+ "userpwd:" + userpwd + ";\\s*"
-				+ "userschool:(\\S*?);\\s*"
-				+ "userschool_class:(\\S*?);\\s*"
-				+ "usernumber:(\\S*?);\\s*"
-				+ "usersex:(\\S*?);\\s*"
-				+ "\\},\\s*";
+		String string = "\\{[^\\{\\}]*?id:([^\\{\\}]*?);[^\\{\\}]*?username:" + username + ";[^\\{\\}]*?userpwd:" + userpwd + ";[^\\{\\}]*?\\},\\s*";
 		
 		Pattern pstr = Pattern.compile(string);
 		Matcher mstr = pstr.matcher(all);

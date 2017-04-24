@@ -25,9 +25,10 @@ public class Chat2Client extends Thread {
 		try {
 			// 返回第一次出现的指定子字符串在此字符串中的索引。
 			int index = ip.indexOf("/");
-
+			
 			// 截取/之后的ip字符
 			ip = ip.substring(index + 1);
+			System.out.println("对方ip：" + ip);
 
 			socket = new Socket(ip, KeyWord.PORT_CHAT2CLIENT);
 

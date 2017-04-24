@@ -75,7 +75,7 @@ public class Release {
 						//״̬
 						+ "status:1;\r\n"
 						+ "person:" + person + ";\r\n"
-						+ "school" + ReleaseUtils.getSchool(id) + ";\r\n"
+						+ "school:" + ReleaseUtils.getSchool(id) + ";\r\n"
 						+ "name:" + name + ";\r\n" 
 						+ "sell:" + sell + ";\r\n" 
 						+ "rent:" + rent + ";\r\n" 

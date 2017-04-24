@@ -7,4 +7,14 @@ userschool_class:国际软件学院;
 usernumber:2016302580250;
 usersex:男;
 },
+{
+id:刘洋武大国软123456男;
+username:刘洋;
+userpwd:123456;
+
+userschool:武大;
+userschool_class:国软;
+usernumber:123456;
+usersex:男;
+},
 
