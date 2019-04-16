@@ -16,7 +16,25 @@ id:刘洋武大国软123456男;
 tag:1;
 person:刘洋;
 program:武汉东湖;
-money:0;
+money:0元3天;
 detil:东湖风景区;
+},
+
+{
+id:孙畅华科软工usernumber男;
+tag:2;
+person:;
+program:攻略;
+money:120;
+detil:攻略详情元/天;
+},
+
+{
+id:刘洋武大国软123456男;
+tag:3;
+person:刘洋;
+program:攻略;
+money:23;
+detil:攻略详情元/天;
 },
 

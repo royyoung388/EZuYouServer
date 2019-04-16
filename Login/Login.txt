@@ -18,3 +18,13 @@ usernumber:123456;
 usersex:男;
 },
 
+{
+id:孙畅华科软工usernumber男;
+username:孙畅;
+userpwd:123456;
+userschool:华科;
+userschool_class:软工;
+usernumber:usernumber;
+usersex:男;
+},
+

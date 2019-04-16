@@ -37,3 +37,15 @@ tag:1;
 status:0;
 },
 
+{
+item:home;
+tag:6;
+status:1;
+},
+
+{
+item:strategy;
+tag:3;
+status:11;
+},
+

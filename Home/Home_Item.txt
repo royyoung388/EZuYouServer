@@ -58,3 +58,27 @@ rent:3;
 introduce:书包;
 },
 
+{
+id:孙畅华科软工usernumber男;
+tag:5;
+status:1;
+person:孙畅;
+school:华科;
+name:装备;
+sell:50;
+rent:12;
+introduce:装备详情;
+},
+
+{
+id:刘洋武大国软123456男;
+tag:6;
+status:1;
+person:刘洋;
+school:武大;
+name:装备;
+sell:300;
+rent:12;
+introduce:装备详情;
+},
+
