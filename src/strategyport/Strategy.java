@@ -66,7 +66,7 @@ public class Strategy {
 
 				if (tag == -1) {
 					System.out.println("获取所有Strategy信息");
-					String string = FileUtils.Readfile("Strategy\\Strategy_Item.txt");
+					String string = FileUtils.Readfile("Strategy/Strategy_Item.txt");
 					System.out.println("获取所有strategy信息:" + string);
 					out.writeUTF(string);
 				} else if (tag == -2) {

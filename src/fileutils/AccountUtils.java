@@ -16,13 +16,13 @@ public class AccountUtils {
 			
 			System.out.println("account:修改" + id + "的" + tag + "信息");
 			
-			File file = new File("Account\\" + id + ".txt");
+			File file = new File("Account/" + id + ".txt");
 			InputStream is = new FileInputStream(file);
 			BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 
 			String filename = file.getName();
 			// tmpfile 为缓存文件，代码运行完毕后此文件将重命名为源文件名字。
-			File tmpfile = new File(file.getParentFile().getAbsolutePath() + "\\" + filename + ".tmp");
+			File tmpfile = new File(file.getParentFile().getAbsolutePath() + "/" + filename + ".tmp");
 
 			BufferedWriter writer = new BufferedWriter(new FileWriter(tmpfile));
 

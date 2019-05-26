@@ -18,7 +18,7 @@ public class MyUtils {
 		//获取my基本信息	
 		System.out.println("获取my基本信息");
 
-		String string = FileUtils.Readfile("Account\\" + id + ".txt");
+		String string = FileUtils.Readfile("Account/" + id + ".txt");
 		
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?id:" + id + ";[^\\{\\}]*?\\},\\s*)");
 		Matcher matcher = pattern.matcher(string);
@@ -36,7 +36,7 @@ public class MyUtils {
 		
 		// 获取租售信息，trade
 		System.out.println("获取租售信息，trade");
-		String string = FileUtils.Readfile("Account\\" + id + ".txt");
+		String string = FileUtils.Readfile("Account/" + id + ".txt");
 
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?item:home;[^\\{\\}]*?\\},\\s*)");
 		Matcher matcher = pattern.matcher(string);
@@ -77,14 +77,14 @@ public class MyUtils {
 
 			System.out.println("修改" + id + "的密码为" + pwd_new);
 
-			File file = new File("Login\\Login.txt");
+			File file = new File("Login/Login.txt");
 			
 			InputStream is = new FileInputStream(file);
 			BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 
 			String filename = file.getName();
 			// tmpfile 为缓存文件，代码运行完毕后此文件将重命名为源文件名字。
-			File tmpfile = new File(file.getParentFile().getAbsolutePath() + "\\" + filename + ".tmp");
+			File tmpfile = new File(file.getParentFile().getAbsolutePath() + "/" + filename + ".tmp");
 
 			BufferedWriter writer = new BufferedWriter(new FileWriter(tmpfile));
 

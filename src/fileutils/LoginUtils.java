@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class LoginUtils {
 	public static int userIsExist(String username, String userpwd, String userschool, String usernumber) {
-		String detil = FileUtils.Readfile("Login\\Login.txt");
+		String detil = FileUtils.Readfile("Login/Login.txt");
 		String name_pwd = "(\\{[^\\{\\}]*?username:" + username
 				+ ";[^\\{\\}]*?userpwd:" + userpwd
 				+ ";[^\\{\\}]*?\\},\\s*)";

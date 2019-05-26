@@ -30,7 +30,7 @@ public class UserUtils {
 	//获取id
 	public String getID() {
 		System.out.println("获取id");
-		String all = FileUtils.Readfile("Login\\Login.txt");
+		String all = FileUtils.Readfile("Login/Login.txt");
 		String string = "\\{[^\\{\\}]*?id:([^\\{\\}]*?);[^\\{\\}]*?username:" + username + ";[^\\{\\}]*?userpwd:" + userpwd + ";[^\\{\\}]*?\\},\\s*";
 		
 		Pattern pstr = Pattern.compile(string);
@@ -54,7 +54,7 @@ public class UserUtils {
 	
 	//获取基本信息
 	public String getMy() {
-		String all = FileUtils.Readfile("Account\\"+ id + ".txt");
+		String all = FileUtils.Readfile("Account/"+ id + ".txt");
 		
 		String string = "\\{\\s*"
 				+ "id:(\\S*?);\\s*"

@@ -54,7 +54,7 @@ public class Upload_Image {
 
 				String id = inputStream.readUTF();
 
-				FileOutputStream fos = new FileOutputStream("Account\\" + id + ".jpg");
+				FileOutputStream fos = new FileOutputStream("Account/" + id + ".jpg");
 
 				int size = inputStream.readInt();
 				byte[] data = new byte[size];

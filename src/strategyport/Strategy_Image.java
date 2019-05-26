@@ -63,7 +63,7 @@ public class Strategy_Image {
 				if (tag == -1) {
 					int i = 0;
 					while (true) {
-						File file = new File("Strategy\\Strategy_Image\\image" + i + "1.jpg");
+						File file = new File("Strategy/Strategy_Image/image" + i + "1.jpg");
 
 						if (file.exists()) {
 							FileInputStream fis = new FileInputStream(file);
@@ -94,7 +94,7 @@ public class Strategy_Image {
 					// 获取指定id的Strategy——Image消息
 					int i = 0;
 					while (true) {
-						File file = new File("Strategy\\Strategy_Image\\image" + i + "1.jpg");
+						File file = new File("Strategy/Strategy_Image/image" + i + "1.jpg");
 
 						if (file.exists()) {
 							if (StrategyUtils.isStrategyID(id, i)) {
@@ -127,7 +127,7 @@ public class Strategy_Image {
 					// 指定图片
 					int i = 1;
 					while (true) {
-						File file = new File("Strategy\\Strategy_Image\\image" + tag + i + ".jpg");
+						File file = new File("Strategy/Strategy_Image/image" + tag + i + ".jpg");
 
 						if (file.exists()) {
 							FileInputStream fis = new FileInputStream(file);

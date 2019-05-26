@@ -68,7 +68,7 @@ public class Home_Image {
 					System.out.println("获取所有的item的image信息");
 					int i = 0;
 					while (true) {
-						File file = new File("Home\\Home_image\\image" + i + "1.jpg");
+						File file = new File("Home/Home_image/image" + i + "1.jpg");
 
 						if (file.exists()) {
 							if (HomeUtils.isStatus(i)) {
@@ -102,7 +102,7 @@ public class Home_Image {
 					System.out.println("获取指定id的image信息");
 					int i = 0;
 					while (true) {
-						File file = new File("Home\\Home_image\\image" + i + "1.jpg");
+						File file = new File("Home/Home_image/image" + i + "1.jpg");
 
 						if (file.exists()) {
 							if (HomeUtils.isID(id, i)) {
@@ -136,7 +136,7 @@ public class Home_Image {
 					System.out.println("获取指定id的status为1的图片");
 					int i = 0;
 					while (true) {
-						File file = new File("Home\\Home_image\\image" + i + "1.jpg");
+						File file = new File("Home/Home_image/image" + i + "1.jpg");
 
 						if (file.exists()) {
 							if (HomeUtils.isID(id, i) && HomeUtils.isStatus(i)) {
@@ -170,7 +170,7 @@ public class Home_Image {
 					System.out.println("获取指定id的status为0的图片");
 					int i = 0;
 					while (true) {
-						File file = new File("Home\\Home_image\\image" + i + "1.jpg");
+						File file = new File("Home/Home_image/image" + i + "1.jpg");
 
 						if (file.exists()) {
 							if (HomeUtils.isID(id, i) && !HomeUtils.isStatus(i)) {
@@ -205,7 +205,7 @@ public class Home_Image {
 					System.out.println("获取指定tag的image信息");
 					int i = 1;
 					while (true) {
-						File file = new File("Home\\Home_image\\image" + tag + i + ".jpg");
+						File file = new File("Home/Home_image/image" + tag + i + ".jpg");
 
 						if (file.exists()) {
 

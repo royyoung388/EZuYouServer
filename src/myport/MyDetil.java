@@ -62,10 +62,10 @@ public class MyDetil {
 				
 				out.writeUTF(MyUtils.getMyDetil(id));
 				
-				if (new File("Account\\" + id + ".jpg").exists()) {
+				if (new File("Account/" + id + ".jpg").exists()) {
 					out.writeUTF("yes");
 					System.out.println("yes");
-					FileInputStream fis = new FileInputStream("Account\\" + id + ".jpg");
+					FileInputStream fis = new FileInputStream("Account/" + id + ".jpg");
 					int size = fis.available();
 					System.out.println("size = " + size);
 

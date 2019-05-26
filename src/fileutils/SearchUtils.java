@@ -9,7 +9,7 @@ public class SearchUtils {
 		int i = 0;
 
 		while (true) {
-			File file = new File("Home\\Home_image\\image" + i + "1.jpg");
+			File file = new File("Home/Home_image/image" + i + "1.jpg");
 			if (file.exists()) {
 				i++;
 				count++;
@@ -23,7 +23,7 @@ public class SearchUtils {
 		int i = 0;
 
 		while (true) {
-			File file = new File("Strategy\\Strategy_Image\\image" + i + "1.jpg");
+			File file = new File("Strategy/Strategy_Image/image" + i + "1.jpg");
 			if (file.exists()) {
 				i++;
 				count++;
@@ -35,7 +35,7 @@ public class SearchUtils {
 	//search获取homeItem的name信息
 	/*public static String getHomeItemName(String homeItem) {
 
-		Pattern pattern = Pattern.compile("\\{[^\\{\\}]*?name:(\\S*?);[^\\{\\}]*?\\},\\s*");
+		Pattern pattern = Pattern.compile("\\{[^\\{\\}]*?name:(\\S*?);[^\\{/}]*?\\},\\s*");
 
 		Matcher matcher = pattern.matcher(homeItem);
 		System.out.println("search获取homeitem的name信息");

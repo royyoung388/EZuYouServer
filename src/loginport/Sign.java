@@ -71,7 +71,7 @@ public class Sign {
 							userschool, userschool_class, usernumber, usersex);
 							
 					//所有账号的总和，相当于索引
-					FileUtils.Writefile("Login\\Login.txt", "{\r\n"
+					FileUtils.Writefile("Login/Login.txt", "{\r\n"
 											+ "id:" + userUtils.creatID() + ";\r\n"
 											+ "username:" + username + ";\r\n"
 											+ "userpwd:" + userpwd + ";\r\n"
@@ -82,9 +82,9 @@ public class Sign {
 											+ "},\n");
 					
 					//创建每个账号的个人文件
-					FileUtils.CreatFile("Account\\" + userUtils.creatID() + ".txt");
+					FileUtils.CreatFile("Account/" + userUtils.creatID() + ".txt");
 					//写入账号信息
-					FileUtils.Writefile("Account\\" + userUtils.creatID() + ".txt", "{\r\n"
+					FileUtils.Writefile("Account/" + userUtils.creatID() + ".txt", "{\r\n"
 									+ "id:" + userUtils.creatID() + ";\r\n"
 									+ "username:" + username + ";\r\n"
 									+ "userschool:" + userschool + ";\r\n"

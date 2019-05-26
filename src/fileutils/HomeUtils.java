@@ -15,7 +15,7 @@ public class HomeUtils {
 	//获取指定的item信息
 	public static String ReadItemPosition(int tag) {
 
-		String string = FileUtils.Readfile("Home\\Home_Item.txt");
+		String string = FileUtils.Readfile("Home/Home_Item.txt");
 
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?tag:" + tag + ";[^\\{\\}]*?\\},\\s*)");
 
@@ -39,7 +39,7 @@ public class HomeUtils {
 		
 		
 		while (true) {
-			File file = new File("Home\\Home_image\\image" + i + j + ".jpg");
+			File file = new File("Home/Home_image/image" + i + j + ".jpg");
 			if (file.exists()) {
 				count++;
 				j++;
@@ -55,7 +55,7 @@ public class HomeUtils {
     
     //获取所有的status为1的item信息
     public static String getStatus1Item() {
-		String string = FileUtils.Readfile("Home\\Home_Item.txt");
+		String string = FileUtils.Readfile("Home/Home_Item.txt");
 		
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?status:1;[^\\{\\}]*?\\},\\s*)");
 		Matcher matcher = pattern.matcher(string);
@@ -74,7 +74,7 @@ public class HomeUtils {
     
     //获取指定id和status的item
     public static String getIdStatusItem(String id, int status) {
-    	String string = FileUtils.Readfile("Home\\Home_Item.txt");
+    	String string = FileUtils.Readfile("Home/Home_Item.txt");
 
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?id:" + id + ";[^\\{\\}]*?status:" + status + ";[^\\{\\}]*?\\},\\s*)");
 		Matcher matcher = pattern.matcher(string);
@@ -93,7 +93,7 @@ public class HomeUtils {
     
     //获取指定id的信息
 	public static String getIdItem(String id) {
-		String string = FileUtils.Readfile("Home\\Home_Item.txt");
+		String string = FileUtils.Readfile("Home/Home_Item.txt");
 
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?id:" + id + ";[^\\{\\}]*?\\},\\s*)");
 		Matcher matcher = pattern.matcher(string);
@@ -112,7 +112,7 @@ public class HomeUtils {
     
     //获取指定tag的status值
     public static boolean isStatus(int tag) {
-    	String string = FileUtils.Readfile("Home\\Home_Item.txt");
+    	String string = FileUtils.Readfile("Home/Home_Item.txt");
 		
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?tag:" + tag + ";[^\\{\\}]*?status:1;[^\\{\\}]*?\\},\\s*)");
 		Matcher matcher = pattern.matcher(string);
@@ -131,7 +131,7 @@ public class HomeUtils {
 	// 获取item的id信息
 	public static boolean isID(String id, int tag) {
 
-		String string = FileUtils.Readfile("Home\\Home_Item.txt");
+		String string = FileUtils.Readfile("Home/Home_Item.txt");
 
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?id:" + id + ";[^\\{\\}]*?tag:" + tag + ";[^\\{\\}]*?\\},\\s*)");
 		Matcher matcher = pattern.matcher(string);
@@ -152,13 +152,13 @@ public class HomeUtils {
 	public static void chageStatus(String id, int tag) {
 		try {
 			System.out.println("item:修改" + id + "的" + tag + "信息");
-			File file = new File("Home\\Home_Item.txt");
+			File file = new File("Home/Home_Item.txt");
 			InputStream is = new FileInputStream(file);
 			BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 
 			String filename = file.getName();
 			// tmpfile 为缓存文件，代码运行完毕后此文件将重命名为源文件名字。
-			File tmpfile = new File(file.getParentFile().getAbsolutePath() + "\\" + filename + ".tmp");
+			File tmpfile = new File(file.getParentFile().getAbsolutePath() + "/" + filename + ".tmp");
 
 			BufferedWriter writer = new BufferedWriter(new FileWriter(tmpfile));
 

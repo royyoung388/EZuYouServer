@@ -61,7 +61,7 @@ public class Strategy_Release {
 				//寻找image的编号
 				int image_count = 0;
 
-				while (new File("Strategy\\Strategy_Image\\image" + image_count + "1" + ".jpg").exists()) {
+				while (new File("Strategy/Strategy_Image/image" + image_count + "1" + ".jpg").exists()) {
 					image_count++;
 				}
 
@@ -69,7 +69,7 @@ public class Strategy_Release {
 
 				for (int i = 0; i < count; i++) {
 					FileOutputStream fos = new FileOutputStream(
-							"Strategy\\Strategy_Image\\image" + image_count + (i + 1) + ".jpg");
+							"Strategy/Strategy_Image/image" + image_count + (i + 1) + ".jpg");
 
 					int size = in.readInt();
 					byte[] data = new byte[size];
@@ -83,7 +83,7 @@ public class Strategy_Release {
 				}
 				
 				//写入信息
-				FileUtils.Writefile("Strategy\\Strategy_Item.txt", 
+				FileUtils.Writefile("Strategy/Strategy_Item.txt", 
 						"{\r\n" 
 						//标识符
 						+ "id:" + id + ";\r\n" 
@@ -99,7 +99,7 @@ public class Strategy_Release {
 
 				
 				//写到对应的个人账号中
-				FileUtils.Writefile("Account\\" + id + ".txt", 
+				FileUtils.Writefile("Account/" + id + ".txt", 
 						"{\r\n" +
 						"item:strategy" + ";\r\n" + 
 						"tag:" + image_count +";\r\n" +

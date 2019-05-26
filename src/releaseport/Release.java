@@ -62,12 +62,12 @@ public class Release {
 				//寻找image的编号
 				int image_count = 0;
 
-				while (new File("Home\\Home_image\\image" + image_count + "1" + ".jpg").exists()) {
+				while (new File("Home/Home_image/image" + image_count + "1" + ".jpg").exists()) {
 					image_count++;
 				}
 
 				//写入信息
-				FileUtils.Writefile("Home\\Home_Item.txt", "{\r\n" 
+				FileUtils.Writefile("Home/Home_Item.txt", "{\r\n" 
 						//标识符
 						+ "id:" + id + ";\r\n" 
 						//编号
@@ -88,7 +88,7 @@ public class Release {
 
 				for (int i = 0; i < count; i++) {
 					FileOutputStream fos = new FileOutputStream(
-							"Home\\Home_image\\image" + image_count + (i + 1) + ".jpg");
+							"Home/Home_image/image" + image_count + (i + 1) + ".jpg");
 
 					int size = in.readInt();
 					byte[] data = new byte[size];
@@ -102,7 +102,7 @@ public class Release {
 				}
 				
 				//写到对应的个人账号中
-				FileUtils.Writefile("Account\\" + id + ".txt", 
+				FileUtils.Writefile("Account/" + id + ".txt", 
 						"{\r\n" +
 						"item:home" + ";\r\n" + 
 						"tag:" + image_count +";\r\n" +

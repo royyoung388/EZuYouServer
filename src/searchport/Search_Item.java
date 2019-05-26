@@ -62,7 +62,7 @@ public class Search_Item {
 					out.writeInt(count);				
 					System.out.println("search_home 图片个数" + count);
 
-					out.writeUTF(FileUtils.Readfile("Home\\Home_Item.txt"));
+					out.writeUTF(FileUtils.Readfile("Home/Home_Item.txt"));
 					
 					System.out.println("获取home的搜索信息成功");
 				} else if (want.equals("strategy")) {
@@ -72,7 +72,7 @@ public class Search_Item {
 					out.writeInt(count);
 					System.out.println("home sreategy图片");
 
-					out.writeUTF(FileUtils.Readfile("Strategy\\Strategy_Item.txt"));
+					out.writeUTF(FileUtils.Readfile("Strategy/Strategy_Item.txt"));
 					
 					System.out.println("获取strategy的搜索信息成功");
 				}

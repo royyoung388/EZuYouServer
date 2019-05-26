@@ -9,7 +9,7 @@ public class StrategyUtils {
 	// 获取指定tag的strategy_item信息
 	public static String ReadItemPosition_strategy(int tag) {
 
-		String string = FileUtils.Readfile("Strategy\\Strategy_Item.txt");
+		String string = FileUtils.Readfile("Strategy/Strategy_Item.txt");
 
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?tag:" + tag + ";[^\\{\\}]*?\\},\\s*)");
 
@@ -27,7 +27,7 @@ public class StrategyUtils {
 	// 获取指定id的Strategy——item消息
 	public static String ReadId_strategy(String id) {
 
-		String string = FileUtils.Readfile("Strategy\\Strategy_Item.txt");
+		String string = FileUtils.Readfile("Strategy/Strategy_Item.txt");
 
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?id:" + id + ";[^\\{\\}]*?\\},\\s*)");
 		Matcher matcher = pattern.matcher(string);
@@ -48,7 +48,7 @@ public class StrategyUtils {
 	//获取strategy_imgae的id
 	public static boolean isStrategyID(String id, int tag) {
 		
-		String string = FileUtils.Readfile("Strategy\\Strategy_Item.txt");
+		String string = FileUtils.Readfile("Strategy/Strategy_Item.txt");
 
 		Pattern pattern = Pattern.compile("(\\{[^\\{\\}]*?id:" + id + ";[^\\{\\}]*?tag:"+ tag +";[^\\{\\}]*?\\},\\s*)");
 		Matcher matcher = pattern.matcher(string);
@@ -71,7 +71,7 @@ public class StrategyUtils {
 		int i = 0, j = 1;
 
 		while (true) {
-			File file = new File("Strategy\\Strategy_Image\\image" + i + j + ".jpg");
+			File file = new File("Strategy/Strategy_Image/image" + i + j + ".jpg");
 			if (file.exists()) {
 				count++;
 				j++;

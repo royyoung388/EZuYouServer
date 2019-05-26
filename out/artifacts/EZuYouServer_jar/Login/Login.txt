@@ -1,30 +1,30 @@
 {
-id:ËïÑôÎäºº´óÑ§¹ú¼ÊÈí¼şÑ§Ôº2016302580250ÄĞ;
-username:ËïÑô;
+id:å­™é˜³æ­¦æ±‰å¤§å­¦å›½é™…è½¯ä»¶å­¦é™¢2016302580250ç”·;
+username:å­™é˜³;
 userpwd:123456;
-userschool:Îäºº´óÑ§;
-userschool_class:¹ú¼ÊÈí¼şÑ§Ôº;
+userschool:æ­¦æ±‰å¤§å­¦;
+userschool_class:å›½é™…è½¯ä»¶å­¦é™¢;
 usernumber:2016302580250;
-usersex:ÄĞ;
+usersex:ç”·;
 },
 {
-id:ÁõÑóÎä´ó¹úÈí123456ÄĞ;
-username:ÁõÑó;
+id:åˆ˜æ´‹æ­¦å¤§å›½è½¯123456ç”·;
+username:åˆ˜æ´‹;
 userpwd:123456;
 
-userschool:Îä´ó;
-userschool_class:¹úÈí;
+userschool:æ­¦å¤§;
+userschool_class:å›½è½¯;
 usernumber:123456;
-usersex:ÄĞ;
+usersex:ç”·;
 },
 
 {
-id:Ëï³©»ª¿ÆÈí¹¤usernumberÄĞ;
-username:Ëï³©;
+id:å­™ç•…åç§‘è½¯å·¥usernumberç”·;
+username:å­™ç•…;
 userpwd:123456;
-userschool:»ª¿Æ;
-userschool_class:Èí¹¤;
+userschool:åç§‘;
+userschool_class:è½¯å·¥;
 usernumber:usernumber;
-usersex:ÄĞ;
+usersex:ç”·;
 },
 

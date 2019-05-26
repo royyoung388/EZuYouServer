@@ -7,9 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5031ed0-50a6-48f3-8557-a3f71b4ed6d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/EZuYouServer_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileutils/AccountUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileutils/AccountUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileutils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileutils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileutils/HomeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileutils/HomeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileutils/LoginUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileutils/LoginUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileutils/MyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileutils/MyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileutils/ReleaseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileutils/ReleaseUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileutils/SearchUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileutils/SearchUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileutils/StrategyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileutils/StrategyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileutils/UserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileutils/UserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homeport/Home_Advertise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homeport/Home_Advertise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homeport/Home_Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homeport/Home_Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loginport/Sign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loginport/Sign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myport/MyDetil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myport/MyDetil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myport/Upload_Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myport/Upload_Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/releaseport/Release.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/releaseport/Release.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searchport/Search_Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searchport/Search_Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searchport/Search_Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searchport/Search_Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategyport/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategyport/Strategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategyport/Strategy_Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategyport/Strategy_Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategyport/Strategy_Release.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategyport/Strategy_Release.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -24,16 +42,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image61.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image51.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image41.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image33.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image31.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image01.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Login/Login.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Strategy/Strategy_Image/image01.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Strategy/Strategy_Image/image11.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Strategy/Strategy_Image/image21.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Strategy/Strategy_Image/image31.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>孙畅</find>
+      <find>\\</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,6 +110,26 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Login/Login.txt" />
+        <option value="$PROJECT_DIR$/src/fileutils/FileUtils.java" />
+        <option value="$PROJECT_DIR$/src/fileutils/AccountUtils.java" />
+        <option value="$PROJECT_DIR$/src/fileutils/HomeUtils.java" />
+        <option value="$PROJECT_DIR$/src/fileutils/LoginUtils.java" />
+        <option value="$PROJECT_DIR$/src/fileutils/MyUtils.java" />
+        <option value="$PROJECT_DIR$/src/fileutils/ReleaseUtils.java" />
+        <option value="$PROJECT_DIR$/src/fileutils/SearchUtils.java" />
+        <option value="$PROJECT_DIR$/src/fileutils/StrategyUtils.java" />
+        <option value="$PROJECT_DIR$/src/fileutils/UserUtils.java" />
+        <option value="$PROJECT_DIR$/src/homeport/Home_Advertise.java" />
+        <option value="$PROJECT_DIR$/src/homeport/Home_Image.java" />
+        <option value="$PROJECT_DIR$/src/loginport/Sign.java" />
+        <option value="$PROJECT_DIR$/src/myport/MyDetil.java" />
+        <option value="$PROJECT_DIR$/src/myport/Upload_Image.java" />
+        <option value="$PROJECT_DIR$/src/releaseport/Release.java" />
+        <option value="$PROJECT_DIR$/src/searchport/Search_Image.java" />
+        <option value="$PROJECT_DIR$/src/searchport/Search_Item.java" />
+        <option value="$PROJECT_DIR$/src/strategyport/Strategy.java" />
+        <option value="$PROJECT_DIR$/src/strategyport/Strategy_Image.java" />
+        <option value="$PROJECT_DIR$/src/strategyport/Strategy_Release.java" />
       </list>
     </option>
   </component>
@@ -87,17 +175,131 @@
             <path>
               <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="EZuYouServer_jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="EZuYouServer_jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="EZuYouServer_jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Account2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="EZuYouServer_jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="EZuYouServer_jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="Home_image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="EZuYouServer_jar" type="462c0819:PsiDirectoryNode" />
               <item name="Login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="EZuYouServer_jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Strategy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="EZuYouServer_jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Strategy" type="462c0819:PsiDirectoryNode" />
+              <item name="Strategy_Image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="chatport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fileutils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="homeport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="keyword" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="loginport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="releaseport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="searchport" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
@@ -127,7 +329,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/EZuYouServer_jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Account2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="E:/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -137,6 +339,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\EZuYouServer\out\artifacts\EZuYouServer_jar\Account2" />
       <recent name="D:\IdeaProjects\EZuYouServer\out\artifacts\EZuYouServer_jar" />
     </key>
   </component>
@@ -223,12 +426,12 @@
       <workItem from="1555387366509" duration="1019000" />
       <workItem from="1558769094478" duration="94000" />
       <workItem from="1558772332159" duration="560000" />
-      <workItem from="1558853546422" duration="767000" />
+      <workItem from="1558853546422" duration="4379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2440000" />
+    <option name="totallyTimeSpent" value="6052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
@@ -251,7 +454,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32847682" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3275862" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="bottom" id="EvoSuite" order="13" />
@@ -270,19 +473,205 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bin/releaseport/Release.class" />
-    <entry file="file://$PROJECT_DIR$/bin/server/Server.class" />
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Account2/ly.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_Item.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Account2/sc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Account2/sy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fileutils/AccountUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fileutils/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-777">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fileutils/HomeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-644">
+          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fileutils/LoginUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fileutils/MyUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="123" column="8" lean-forward="true" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fileutils/ReleaseUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="69" lean-forward="true" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fileutils/SearchUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fileutils/StrategyUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-758">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fileutils/UserUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="64" column="40" lean-forward="true" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/homeport/Home_Advertise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="97">
+          <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeport/Home_Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-720">
+          <caret line="204" column="34" selection-start-line="204" selection-start-column="34" selection-end-line="204" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeport/Home_Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chatport/Chat2Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chatport/ChatPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeport/Home_Pay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/keyword/KeyWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loginport/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-224">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loginport/Sign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myport/Change_Pwd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myport/MyDetil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="67" column="71" selection-start-line="67" selection-start-column="71" selection-end-line="67" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myport/Upload_Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="56" column="70" selection-start-line="56" selection-start-column="70" selection-end-line="56" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/releaseport/Release.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1408">
+          <caret line="104" column="46" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/searchport/Search_Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-245">
+          <caret line="88" column="71" selection-start-line="88" selection-start-column="71" selection-end-line="88" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/searchport/Search_Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="74" column="63" selection-start-line="74" selection-start-column="63" selection-end-line="74" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        <state relative-caret-position="-110">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -291,56 +680,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/strategyport/Strategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+        <state relative-caret-position="21">
+          <caret line="68" column="66" selection-start-line="68" selection-start-column="66" selection-end-line="68" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/keyword/KeyWord.java">
+    <entry file="file://$PROJECT_DIR$/src/strategyport/Strategy_Image.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="57" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="57" />
+        <state relative-caret-position="1562">
+          <caret line="129" column="71" selection-start-line="129" selection-start-column="71" selection-end-line="129" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Account/孙畅华科软工usernumber男.txt">
+    <entry file="file://$PROJECT_DIR$/src/strategyport/Strategy_Release.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="80">
+          <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Account/刘洋武大国软123456男.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Account/刘洋武大国软123456男.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-358" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Account2/ly.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Login/Login.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Account2/sy.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/advertisement.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_Item.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image02.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/Login.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image11.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image22.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image23.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image32.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image61.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image51.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image41.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image33.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image31.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_image/image01.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Strategy/Strategy_Image/image11.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Strategy/Strategy_Image/image21.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Strategy/Strategy_Image/image31.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Strategy/Strategy_Image/image01.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">

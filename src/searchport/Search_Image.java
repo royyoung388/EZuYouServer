@@ -63,12 +63,12 @@ public class Search_Image {
 					System.out.println("获取home的image搜索信息");
 
 					while (true) {
-						File file = new File("Home\\Home_image\\image" + i + "1.jpg");
+						File file = new File("Home/Home_image/image" + i + "1.jpg");
 
 						if (file.exists()) {
 							transferSearchImage(file);
 							i++;
-							file = new File("Home\\Home_image" + i + "1.jpg");
+							file = new File("Home/Home_image" + i + "1.jpg");
 						} else {
 							out.writeInt(0);
 							out.write(0);
@@ -81,12 +81,12 @@ public class Search_Image {
 					System.out.println("获取strategy的搜索信息");
 
 					while (true) {
-						File file1 = new File("Strategy\\Strategy_Image\\image" + i + "1.jpg");
+						File file1 = new File("Strategy/Strategy_Image/image" + i + "1.jpg");
 
 						if (file1.exists()) {
 							transferSearchImage(file1);
 							i++;
-							file1 = new File("Strategy\\Strategy_Image\\image" + i + "1.jpg");
+							file1 = new File("Strategy/Strategy_Image/image" + i + "1.jpg");
 						} else {
 							out.writeInt(0);
 							out.write(0);

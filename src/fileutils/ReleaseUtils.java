@@ -8,7 +8,7 @@ public class ReleaseUtils {
 	//获取学校
 	public static String getSchool(String id) {
 		
-		String string = FileUtils.Readfile("Account\\" + id + ".txt");
+		String string = FileUtils.Readfile("Account/" + id + ".txt");
 		
 		Pattern pattern = Pattern.compile("\\{[^\\{\\}]*?userschool:(\\S*?);[^\\{\\}]*?\\},\\s*");
 
