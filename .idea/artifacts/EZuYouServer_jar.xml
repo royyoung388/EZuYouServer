@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EZuYouServer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/EZuYouServer_jar</output-path>
+    <root id="archive" name="EZuYouServer.jar">
+      <element id="module-output" name="EZuYouServer" />
+    </root>
+  </artifact>
+</component>

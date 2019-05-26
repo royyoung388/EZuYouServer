@@ -1,75 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="EZuYouServer:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b5031ed0-50a6-48f3-8557-a3f71b4ed6d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account/刘洋武大国软123456男.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Account/刘洋武大国软123456男.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home/Home_Item.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Home_Item.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login/Login.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Login/Login.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Strategy/Strategy_Item.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Strategy/Strategy_Item.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/chatport/Chat2Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chatport/Chat2Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/chatport/ChatPort$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chatport/ChatPort$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/chatport/ChatPort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chatport/ChatPort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fileutils/AccountUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/fileutils/AccountUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fileutils/FileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/fileutils/FileUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fileutils/HomeUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/fileutils/HomeUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fileutils/LoginUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/fileutils/LoginUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fileutils/MyUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/fileutils/MyUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fileutils/ReleaseUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/fileutils/ReleaseUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fileutils/SearchUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/fileutils/SearchUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fileutils/StrategyUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/fileutils/StrategyUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fileutils/UserUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/fileutils/UserUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/homeport/Home_Advertise$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/homeport/Home_Advertise$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/homeport/Home_Advertise.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/homeport/Home_Advertise.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/homeport/Home_Image$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/homeport/Home_Image$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/homeport/Home_Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/homeport/Home_Image.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/homeport/Home_Item$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/homeport/Home_Item$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/homeport/Home_Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/homeport/Home_Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/homeport/Home_Pay$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/homeport/Home_Pay$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/homeport/Home_Pay.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/homeport/Home_Pay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/keyword/KeyWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/keyword/KeyWord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/loginport/Login$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/loginport/Login$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/loginport/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/loginport/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/loginport/Sign$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/loginport/Sign$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/loginport/Sign.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/loginport/Sign.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/myport/Change_Pwd$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myport/Change_Pwd$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/myport/Change_Pwd.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myport/Change_Pwd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/myport/Mydetil$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myport/Mydetil$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/myport/Mydetil.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myport/Mydetil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/myport/Upload_Image$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myport/Upload_Image$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/myport/Upload_Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myport/Upload_Image.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/releaseport/Release$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/releaseport/Release$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/releaseport/Release.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/releaseport/Release.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/searchport/Search_Image$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/searchport/Search_Image$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/searchport/Search_Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/searchport/Search_Image.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/searchport/Search_Item$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/searchport/Search_Item$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/searchport/Search_Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/searchport/Search_Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$16.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/strategyport/Strategy$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/strategyport/Strategy$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/strategyport/Strategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/strategyport/Strategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/strategyport/Strategy_Image$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/strategyport/Strategy_Image$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/strategyport/Strategy_Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/strategyport/Strategy_Image.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/strategyport/Strategy_Release$HandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/strategyport/Strategy_Release$HandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/strategyport/Strategy_Release.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/strategyport/Strategy_Release.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myport/Mydetil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myport/MyDetil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/EZuYouServer_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -80,16 +20,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+        <entry file="file://$PROJECT_DIR$/Login/Login.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="380">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -124,52 +63,82 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="1864" />
     <option name="height" value="1098" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ezuyouserver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ezuyouserver" type="462c0819:PsiDirectoryNode" />
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ezuyouserver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ezuyouserver" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ezuyouserver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ezuyouserver" type="462c0819:PsiDirectoryNode" />
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="Login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EZuYouServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EZuYouServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="strategyport" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="ezuyouserver" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/EZuYouServer_jar" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="E:/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\EZuYouServer\out\artifacts\EZuYouServer_jar" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -252,82 +221,124 @@
       <option name="presentableId" value="Default" />
       <updated>1555387342330</updated>
       <workItem from="1555387366509" duration="1019000" />
+      <workItem from="1558769094478" duration="94000" />
+      <workItem from="1558772332159" duration="560000" />
+      <workItem from="1558853546422" duration="767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1019000" />
+    <option name="totallyTimeSpent" value="2440000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1864" height="1098" extended-state="6" />
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24972068" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26077098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891247" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32847682" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="EvoSuite" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bin/releaseport/Release.class">
+    <entry file="file://$PROJECT_DIR$/bin/releaseport/Release.class" />
+    <entry file="file://$PROJECT_DIR$/bin/server/Server.class" />
+    <entry file="file://$PROJECT_DIR$/src/homeport/Home_Advertise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-460">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#3104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/server/Server.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#2929#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login/Login.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        <state relative-caret-position="323">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        <state relative-caret-position="320">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategyport/Strategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/keyword/KeyWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="57" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Account/孙畅华科软工usernumber男.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Account/刘洋武大国软123456男.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Account/刘洋武大国软123456男.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-358" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Login/Login.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/advertisement.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/EZuYouServer_jar/Home/Home_Item.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/Login.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -337,10 +348,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>EZuYouServer:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -348,6 +361,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -370,6 +384,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -386,6 +401,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
